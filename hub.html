@@ -207,6 +207,32 @@
   .doc li::marker { color: var(--accent); }
   .doc strong { font-weight: 700; }
 
+  .tablewrap { overflow-x: auto; margin: 12px 0 6px; border: 1px solid var(--line-soft); border-radius: 10px; }
+  table.parts { border-collapse: collapse; width: 100%; font-size: .92rem; }
+  table.parts th, table.parts td { text-align: left; padding: 9px 12px; border-bottom: 1px solid var(--line-soft); }
+  table.parts thead th {
+    font-family: var(--mono); font-size: .64rem; letter-spacing: .1em; text-transform: uppercase;
+    color: var(--ink-faint); background: var(--panel-2); font-weight: 600;
+  }
+  table.parts tbody tr:last-child td { border-bottom: 0; }
+  table.parts td.num { text-align: right; font-variant-numeric: tabular-nums; }
+  .pill {
+    font-family: var(--mono); font-size: .6rem; letter-spacing: .08em; text-transform: uppercase;
+    font-weight: 600; padding: 2px 7px; border-radius: 99px;
+    color: var(--pending); background: color-mix(in srgb, var(--pending) 15%, transparent);
+  }
+  .pill.check { color: var(--doing); background: color-mix(in srgb, var(--doing) 16%, transparent); }
+  .grouplabel {
+    font-family: var(--mono); font-size: .66rem; letter-spacing: .12em; text-transform: uppercase;
+    color: var(--accent); margin: 22px 0 2px; font-weight: 600;
+  }
+  .totalcard {
+    margin-top: 18px; padding: 14px 16px; border-radius: 11px;
+    background: var(--panel-2); border: 1px solid var(--line-soft);
+  }
+  .totalcard .k { font-family: var(--mono); font-size: .64rem; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-faint); }
+  .totalcard .v { font-size: 1.15rem; font-weight: 800; margin-top: 2px; }
+
   /* Stage cards */
   .stage {
     border: 1px solid var(--line-soft);
@@ -303,8 +329,8 @@
         <button class="navitem" role="tab" data-doc="plan">
           <span class="num">02</span><span class="label">Plan</span><span class="dot doing" title="in progress"></span>
         </button>
-        <button class="navitem is-pending" role="tab" data-doc="parts">
-          <span class="num">03</span><span class="label">Parts</span><span class="dot pending" title="not started"></span>
+        <button class="navitem" role="tab" data-doc="parts">
+          <span class="num">03</span><span class="label">Parts</span><span class="dot doing" title="in progress"></span>
         </button>
         <button class="navitem is-pending" role="tab" data-doc="todo">
           <span class="num">04</span><span class="label">TODO</span><span class="dot pending" title="not started"></span>
@@ -517,9 +543,58 @@
       <!-- PLACEHOLDERS -->
       <section class="doc" id="doc-parts">
         <h2>Replacement parts</h2>
-        <p class="subtitle">Parts to find, buy, and fit — with cost and source.</p>
-        <div class="placeholder"><div class="big">Not started yet</div>
-          <p>This document is next in line. It will list every part to replace — radiator, fans, brackets, bull bar, headlight covers — with a target price, a likely source (wrecker or Marketplace), and a status: needed, found, bought, fitted.</p></div>
+        <p class="subtitle">Buy second-hand where safe. Buy new for anything that keeps the engine cool or the car safe. Prices are rough estimates in A$ — a guide, not a quote.</p>
+
+        <div class="grouplabel">Cooling — keep these new or known-good</div>
+        <div class="tablewrap"><table class="parts">
+          <thead><tr><th>Part</th><th>Buy</th><th>Source</th><th class="num">Est. A$</th><th>Status</th></tr></thead>
+          <tbody>
+            <tr><td>Radiator</td><td>New (aftermarket)</td><td>Online / parts store</td><td class="num">200</td><td><span class="pill">Needed</span></td></tr>
+            <tr><td>Cooling fan(s)</td><td>Used, known good</td><td>Wrecker</td><td class="num">60</td><td><span class="pill">Needed</span></td></tr>
+            <tr><td>Radiator hoses and clamps</td><td>New</td><td>Parts store</td><td class="num">40</td><td><span class="pill">Needed</span></td></tr>
+          </tbody>
+        </table></div>
+
+        <div class="grouplabel">Front structure and body</div>
+        <div class="tablewrap"><table class="parts">
+          <thead><tr><th>Part</th><th>Buy</th><th>Source</th><th class="num">Est. A$</th><th>Status</th></tr></thead>
+          <tbody>
+            <tr><td>Radiator support bracket / panel</td><td>Used</td><td>Wrecker</td><td class="num">100</td><td><span class="pill">Needed</span></td></tr>
+            <tr><td>Alloy bull bar (replaces bumper)</td><td>Used</td><td>Marketplace / wrecker</td><td class="num">400</td><td><span class="pill">Needed</span></td></tr>
+            <tr><td>Front grille</td><td>Used</td><td>Wrecker / Marketplace</td><td class="num">80</td><td><span class="pill">Needed</span></td></tr>
+            <tr><td>Bonnet latch mechanism</td><td>Used</td><td>Wrecker</td><td class="num">40</td><td><span class="pill">Needed</span></td></tr>
+          </tbody>
+        </table></div>
+
+        <div class="grouplabel">Lights</div>
+        <div class="tablewrap"><table class="parts">
+          <thead><tr><th>Part</th><th>Buy</th><th>Source</th><th class="num">Est. A$</th><th>Status</th></tr></thead>
+          <tbody>
+            <tr><td>Headlight outer covers / lenses</td><td>See note</td><td>Marketplace / parts store</td><td class="num">50</td><td><span class="pill">Needed</span></td></tr>
+          </tbody>
+        </table></div>
+        <p style="font-size:.86rem;color:var(--ink-soft);margin:6px 2px 0;">Separate covers are hard to source — options: a restoration kit (~A$25) or a good used pair of headlights (~A$120).</p>
+
+        <div class="grouplabel">Fluids and consumables</div>
+        <div class="tablewrap"><table class="parts">
+          <thead><tr><th>Part</th><th>Buy</th><th>Source</th><th class="num">Est. A$</th><th>Status</th></tr></thead>
+          <tbody>
+            <tr><td>Coolant (correct spec)</td><td>New</td><td>Parts store</td><td class="num">35</td><td><span class="pill">Needed</span></td></tr>
+            <tr><td>Misc fasteners and clips</td><td>New</td><td>Parts store</td><td class="num">20</td><td><span class="pill">Needed</span></td></tr>
+          </tbody>
+        </table></div>
+
+        <div class="grouplabel">To confirm after the strip (Stage 3–4)</div>
+        <div class="tablewrap"><table class="parts">
+          <thead><tr><th>Part</th><th>Source</th><th class="num">Est. A$</th><th>Status</th></tr></thead>
+          <tbody>
+            <tr><td>A/C condenser</td><td>Wrecker</td><td class="num">TBC</td><td><span class="pill check">Check</span></td></tr>
+            <tr><td>Intercooler and pipes</td><td>Wrecker</td><td class="num">TBC</td><td><span class="pill check">Check</span></td></tr>
+            <tr><td>Fan shroud</td><td>Wrecker</td><td class="num">TBC</td><td><span class="pill check">Check</span></td></tr>
+          </tbody>
+        </table></div>
+
+        <div class="totalcard"><div class="k">Rough running total (known parts)</div><div class="v">~A$1,000–1,300 <span style="font-weight:500;font-size:.9rem;color:var(--ink-soft);">· well under the A$4,000 budget</span></div></div>
       </section>
 
       <section class="doc" id="doc-todo">
