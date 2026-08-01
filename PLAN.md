@@ -50,11 +50,8 @@ Done: the bonnet is open and the engine bay is visible.
 
 Goal: move the car to Ben's driveway. Do not drive it. The radiator is holed. The engine has no cooling. Ten minutes on the road could cook it.
 
-* First, check for roadside cover. NRMA or a similar plan may tow it for free. Make this call first.
-* If there is no cover, book a flatbed (tilt-tray) tow. Ring two or three local operators for a short local move. Ask for a flat rate. Rough cost: A$100 to A$180.
+* Book a flatbed (tilt-tray) tow. Ring two or three local operators for a short local move. Ask for a flat rate. Rough cost: A$100 to A$180.
 * Tell them it rolls, steers, and brakes. That makes loading easy and can lower the price.
-* A borrowed car trailer works too, but only if the tow vehicle can pull two tonnes.
-* Do not strap-tow it yourself. It is an automatic 4x4. Flat-towing can wreck the gearbox.
 * While the car is loaded, note anything that falls off or drips.
 
 Done when: the car sits in Ben's driveway, ready to strip.
