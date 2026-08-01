@@ -17,7 +17,8 @@ Stage 1 is done. The bonnet was opened while the car sat on the road. The car is
 
 * One stage at a time. No pressure.
 * Take photos before you touch anything. And as you go.
-* Bag and label every bolt. Note where it came from.
+* Take video of any non-trivial step or component before you pull it apart. It shows you how it goes back together.
+* Bag every bolt. Put a small note inside each bag: what it is, and a number if you can. Note where it came from.
 * Buy second-hand where safe. Buy new for anything that keeps the car cool or safe.
 * Confirm a part fits before you buy it.
 * Stop and ask if something feels wrong or too hard.
