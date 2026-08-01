@@ -67,7 +67,7 @@ Goal: remove the smashed parts. Reveal what is behind them.
 * Remove the crushed bumper bar.
 * Remove the broken cooling fans.
 * Disconnect and remove the damaged radiator.
-* Photograph and bag every bolt as it comes off.
+* Photograph and bag every bolt as it comes off. Number each bag, and call that number out in the photo or video. Then the picture, the clip, and the bag all match.
 
 Done when: the front is stripped back to the support panel and the crash zone is open to view.
 
@@ -77,7 +77,7 @@ Goal: know the full picture before we spend money.
 
 With the front open, look past the obvious damage.
 
-* Check the radiator support bracket. How far is it bent? Straighten, or replace?
+* The radiator support bracket is badly bent and needs replacing. Check how far the damage spreads around it.
 * Check the air-conditioning condenser. It sits in front of the radiator. It may be crushed too.
 * Check the intercooler and its pipes. This is a diesel. Look for dents and splits.
 * Check the fan shroud and wiring.
@@ -102,15 +102,15 @@ Work from PARTS.md. See [Replacement parts](PARTS.md).
 
 Done when: every part needed is in hand and checked.
 
-## Stage 6 — Repair the support structure
+## Stage 6 — Replace the support structure
 
 Goal: a straight, solid frame for the radiator to hang on.
 
-* Straighten the bent radiator support bracket. Or fit a good second-hand one.
+* Replace the bent radiator support bracket with a good second-hand one.
 * Check it is square and true.
 * Treat any bare metal against rust.
 
-Done when: the support structure is straight and the radiator will sit true.
+Done when: the new support structure is straight and the radiator will sit true.
 
 ## Stage 7 — Fit the cooling system
 

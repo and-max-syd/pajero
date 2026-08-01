@@ -41,7 +41,7 @@ The Pajero ran into the back of another car. That car had a tow bar. The tow bar
 * Radiator fans broken.
 * Radiator damaged. A large amount of coolant spilled on the road after the crash. The radiator is holed and will need replacing.
 * Bumper bar crushed.
-* Support bracket between the radiator and front grille bent. The radiator hangs off this bracket.
+* Support bracket between the radiator and front grille badly bent. The radiator hangs off this bracket. It needs replacing.
 * Bonnet latch bent. It would not release the bonnet.
 
 ## Mechanical assessment
