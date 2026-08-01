@@ -332,14 +332,11 @@
         <button class="navitem" role="tab" data-doc="parts">
           <span class="num">03</span><span class="label">Parts</span><span class="dot doing" title="in progress"></span>
         </button>
-        <button class="navitem is-pending" role="tab" data-doc="todo">
-          <span class="num">04</span><span class="label">TODO</span><span class="dot pending" title="not started"></span>
-        </button>
         <button class="navitem is-pending" role="tab" data-doc="risks">
-          <span class="num">05</span><span class="label">Risks</span><span class="dot pending" title="not started"></span>
+          <span class="num">04</span><span class="label">Risks</span><span class="dot pending" title="not started"></span>
         </button>
         <button class="navitem is-pending" role="tab" data-doc="equipment">
-          <span class="num">06</span><span class="label">Equipment</span><span class="dot pending" title="not started"></span>
+          <span class="num">05</span><span class="label">Equipment</span><span class="dot pending" title="not started"></span>
         </button>
       </div>
     </nav>
@@ -597,13 +594,6 @@
         <div class="totalcard"><div class="k">Rough running total (known parts)</div><div class="v">~A$1,000–1,300 <span style="font-weight:500;font-size:.9rem;color:var(--ink-soft);">· well under the A$4,000 budget</span></div></div>
       </section>
 
-      <section class="doc" id="doc-todo">
-        <h2>TODO</h2>
-        <p class="subtitle">The live task list. What is next.</p>
-        <div class="placeholder"><div class="big">Not started yet</div>
-          <p>A short, tickable list pulled from the Plan, so Ben always knows the single next thing to do. Built once the Plan settles.</p></div>
-      </section>
-
       <section class="doc" id="doc-risks">
         <h2>Risk assessment</h2>
         <p class="subtitle">What can go wrong. How we stop it.</p>
@@ -621,7 +611,7 @@
   </div>
 
   <footer class="foot">
-    Pajero Repair Hub · one page, all documents · use <span class="kbd">←</span> <span class="kbd">→</span> or <span class="kbd">1</span>–<span class="kbd">6</span> to switch
+    Pajero Repair Hub · one page, all documents · use <span class="kbd">←</span> <span class="kbd">→</span> or <span class="kbd">1</span>–<span class="kbd">5</span> to switch
   </footer>
 </div>
 
@@ -651,7 +641,7 @@
       var cur = items.findIndex(function (b) { return b.getAttribute('aria-current') === 'true'; });
       if (e.key === 'ArrowRight') { show(order[Math.min(order.length - 1, cur + 1)]); e.preventDefault(); }
       else if (e.key === 'ArrowLeft') { show(order[Math.max(0, cur - 1)]); e.preventDefault(); }
-      else if (/^[1-6]$/.test(e.key)) { var i = parseInt(e.key, 10) - 1; if (order[i]) { show(order[i]); e.preventDefault(); } }
+      else if (/^[1-5]$/.test(e.key)) { var i = parseInt(e.key, 10) - 1; if (order[i]) { show(order[i]); e.preventDefault(); } }
     });
   })();
 </script>

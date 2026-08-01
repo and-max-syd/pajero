@@ -78,7 +78,6 @@ We build and maintain these documents as the project runs.
 | Document | Purpose |
 | --- | --- |
 | [Plan](PLAN.md) | The repair, step by step, in order. |
-| [TODO](TODO.md) | The live task list. What is next. |
 | [Replacement parts](PARTS.md) | Parts to find, buy, and fit. Cost and source. |
 | [Risk assessment](RISKS.md) | What can go wrong. How we stop it. |
 | [Equipment](EQUIPMENT.md) | Tools and gear needed for the job. |
