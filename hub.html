@@ -1,0 +1,573 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Pajero Repair — Project Hub</title>
+<style>
+  :root {
+    --ground: #E7EAEE;
+    --panel: #FFFFFF;
+    --panel-2: #F3F5F8;
+    --ink: #171D24;
+    --ink-soft: #5A646E;
+    --ink-faint: #8A939C;
+    --line: #D2D8DE;
+    --line-soft: #E2E7EC;
+    --accent: #C13A2B;
+    --accent-ink: #FFFFFF;
+    --done: #2E7D4F;
+    --doing: #B0740F;
+    --pending: #77828B;
+    --shadow: 0 1px 2px rgba(20,28,36,.06), 0 6px 20px rgba(20,28,36,.06);
+    --sans: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ground: #12161A;
+      --panel: #1B2127;
+      --panel-2: #232B32;
+      --ink: #E7ECF1;
+      --ink-soft: #9BA6B0;
+      --ink-faint: #6E7A84;
+      --line: #2C353D;
+      --line-soft: #232B32;
+      --accent: #E45A4C;
+      --accent-ink: #14181C;
+      --done: #55B583;
+      --doing: #DBA53F;
+      --pending: #8A949C;
+      --shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.35);
+    }
+  }
+  :root[data-theme="light"] {
+    --ground: #E7EAEE; --panel: #FFFFFF; --panel-2: #F3F5F8;
+    --ink: #171D24; --ink-soft: #5A646E; --ink-faint: #8A939C;
+    --line: #D2D8DE; --line-soft: #E2E7EC;
+    --accent: #C13A2B; --accent-ink: #FFFFFF;
+    --done: #2E7D4F; --doing: #B0740F; --pending: #77828B;
+    --shadow: 0 1px 2px rgba(20,28,36,.06), 0 6px 20px rgba(20,28,36,.06);
+  }
+  :root[data-theme="dark"] {
+    --ground: #12161A; --panel: #1B2127; --panel-2: #232B32;
+    --ink: #E7ECF1; --ink-soft: #9BA6B0; --ink-faint: #6E7A84;
+    --line: #2C353D; --line-soft: #232B32;
+    --accent: #E45A4C; --accent-ink: #14181C;
+    --done: #55B583; --doing: #DBA53F; --pending: #8A949C;
+    --shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.35);
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--ground);
+    color: var(--ink);
+    font-family: var(--sans);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 1180px; margin: 0 auto; padding: 20px; }
+
+  /* Header */
+  header.hero {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 22px 24px;
+    box-shadow: var(--shadow);
+  }
+  .eyebrow {
+    font-family: var(--mono);
+    font-size: .7rem;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 6px;
+    font-weight: 600;
+  }
+  .hero h1 {
+    margin: 0;
+    font-size: clamp(1.5rem, 3vw, 2.05rem);
+    font-weight: 800;
+    letter-spacing: -.02em;
+    text-wrap: balance;
+  }
+  .hero p.lede {
+    margin: 8px 0 18px;
+    color: var(--ink-soft);
+    max-width: 62ch;
+  }
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+  }
+  .stat {
+    background: var(--panel-2);
+    border: 1px solid var(--line-soft);
+    border-radius: 10px;
+    padding: 11px 13px;
+  }
+  .stat .k {
+    font-family: var(--mono);
+    font-size: .64rem;
+    letter-spacing: .13em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+  }
+  .stat .v { font-weight: 700; font-size: 1.02rem; margin-top: 3px; }
+  .stat .v small { font-weight: 500; color: var(--ink-soft); font-size: .82rem; }
+
+  /* Progress bar in header */
+  .progress-wrap { margin-top: 16px; }
+  .progress-line {
+    display: flex; align-items: center; justify-content: space-between;
+    font-family: var(--mono); font-size: .66rem; letter-spacing: .12em;
+    text-transform: uppercase; color: var(--ink-faint); margin-bottom: 6px;
+  }
+  .progress-track {
+    height: 7px; border-radius: 99px; background: var(--line-soft);
+    overflow: hidden; border: 1px solid var(--line-soft);
+  }
+  .progress-fill { height: 100%; background: var(--accent); border-radius: 99px; }
+
+  /* Body layout */
+  .layout {
+    display: grid;
+    grid-template-columns: 232px 1fr;
+    gap: 18px;
+    margin-top: 18px;
+    align-items: start;
+  }
+  nav.docs {
+    position: sticky; top: 20px;
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 12px;
+    box-shadow: var(--shadow);
+  }
+  nav.docs .navlabel {
+    font-family: var(--mono); font-size: .64rem; letter-spacing: .14em;
+    text-transform: uppercase; color: var(--ink-faint);
+    padding: 4px 8px 10px;
+  }
+  .navitem {
+    display: block; width: 100%; text-align: left; cursor: pointer;
+    background: transparent; border: 0; border-radius: 9px;
+    padding: 9px 10px; margin-bottom: 2px; color: var(--ink);
+    font-family: var(--sans); font-size: .93rem;
+    display: flex; align-items: center; gap: 9px;
+    transition: background .12s ease;
+  }
+  .navitem:hover { background: var(--panel-2); }
+  .navitem[aria-current="true"] {
+    background: var(--panel-2);
+    box-shadow: inset 3px 0 0 var(--accent);
+  }
+  .navitem .num {
+    font-family: var(--mono); font-size: .7rem; color: var(--ink-faint);
+    width: 15px; flex: none;
+  }
+  .navitem .label { flex: 1; font-weight: 600; }
+  .navitem .dot { width: 8px; height: 8px; border-radius: 99px; flex: none; }
+  .dot.done { background: var(--done); }
+  .dot.doing { background: var(--doing); }
+  .dot.pending { background: var(--pending); opacity: .5; }
+  .navitem.is-pending .label { color: var(--ink-faint); font-weight: 500; }
+
+  main.content {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 30px 34px;
+    box-shadow: var(--shadow);
+    min-height: 60vh;
+  }
+  .doc { display: none; }
+  .doc.active { display: block; animation: fade .22s ease; }
+  @keyframes fade { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
+  @media (prefers-reduced-motion: reduce) {
+    .doc.active { animation: none; }
+    * { scroll-behavior: auto !important; }
+  }
+
+  .doc h2 {
+    font-size: 1.5rem; font-weight: 800; letter-spacing: -.015em;
+    margin: 0 0 4px; text-wrap: balance;
+  }
+  .doc .subtitle { color: var(--ink-soft); margin: 0 0 24px; max-width: 64ch; }
+  .doc h3 {
+    font-size: 1.08rem; font-weight: 700; margin: 30px 0 8px;
+    padding-bottom: 7px; border-bottom: 1px solid var(--line-soft);
+    letter-spacing: -.01em;
+  }
+  .doc p { max-width: 68ch; color: var(--ink); }
+  .doc ul { max-width: 68ch; padding-left: 20px; }
+  .doc li { margin: 5px 0; }
+  .doc li::marker { color: var(--accent); }
+  .doc strong { font-weight: 700; }
+
+  /* Stage cards */
+  .stage {
+    border: 1px solid var(--line-soft);
+    border-radius: 11px;
+    padding: 14px 16px;
+    margin: 10px 0;
+    background: var(--panel-2);
+  }
+  .stage-head { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+  .stage-head .st-num {
+    font-family: var(--mono); font-size: .7rem; color: var(--ink-faint);
+    letter-spacing: .1em;
+  }
+  .stage-head .st-title { font-weight: 700; font-size: 1rem; flex: 1; min-width: 140px; }
+  .badge {
+    font-family: var(--mono); font-size: .62rem; letter-spacing: .1em;
+    text-transform: uppercase; font-weight: 600;
+    padding: 3px 8px; border-radius: 99px; white-space: nowrap;
+  }
+  .badge.done { color: var(--done); background: color-mix(in srgb, var(--done) 15%, transparent); }
+  .badge.doing { color: var(--doing); background: color-mix(in srgb, var(--doing) 16%, transparent); }
+  .badge.pending { color: var(--pending); background: color-mix(in srgb, var(--pending) 15%, transparent); }
+  .stage .goal { color: var(--ink-soft); margin: 8px 0 4px; font-size: .95rem; }
+  .stage ul { margin: 6px 0 0; }
+  .stage .donewhen {
+    margin-top: 10px; font-size: .86rem; color: var(--ink-soft);
+    font-family: var(--mono); letter-spacing: .01em;
+  }
+  .stage .donewhen b { color: var(--ink); font-weight: 600; }
+
+  .callout {
+    border-left: 3px solid var(--accent);
+    background: color-mix(in srgb, var(--accent) 7%, var(--panel-2));
+    padding: 12px 16px; border-radius: 0 9px 9px 0; margin: 16px 0;
+  }
+  .callout p { margin: 0; }
+
+  .placeholder {
+    text-align: left; color: var(--ink-soft);
+    border: 1px dashed var(--line); border-radius: 11px;
+    padding: 26px; background: var(--panel-2);
+  }
+  .placeholder .big {
+    font-family: var(--mono); font-size: .64rem; letter-spacing: .14em;
+    text-transform: uppercase; color: var(--doing); margin-bottom: 8px;
+  }
+
+  footer.foot {
+    text-align: center; color: var(--ink-faint);
+    font-family: var(--mono); font-size: .66rem; letter-spacing: .08em;
+    padding: 22px 0 6px;
+  }
+  .kbd {
+    font-family: var(--mono); font-size: .72rem;
+    border: 1px solid var(--line); border-radius: 5px;
+    padding: 1px 6px; background: var(--panel-2); color: var(--ink-soft);
+  }
+
+  a { color: var(--accent); }
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
+
+  @media (max-width: 760px) {
+    .layout { grid-template-columns: 1fr; }
+    nav.docs { position: static; }
+    main.content { padding: 22px 20px; }
+    nav.docs .navlist { display: flex; overflow-x: auto; gap: 6px; padding-bottom: 4px; }
+    .navitem { flex: 0 0 auto; }
+    .navitem[aria-current="true"] { box-shadow: inset 0 -3px 0 var(--accent); }
+  }
+</style>
+
+<div class="wrap">
+  <header class="hero">
+    <p class="eyebrow">Repair Project · Sydney</p>
+    <h1>Ben's Pajero — Front-End Repair</h1>
+    <p class="lede">A 2009 Mitsubishi Pajero VR-X ran into the back of a car with a tow bar. It crushed the front. We fix it in the driveway. Cheap, safe, and paced.</p>
+    <div class="stats">
+      <div class="stat"><div class="k">Budget</div><div class="v">Up to $4,000 <small>2nd-hand first</small></div></div>
+      <div class="stat"><div class="k">Timeline</div><div class="v">1–3 months</div></div>
+      <div class="stat"><div class="k">Registration</div><div class="v">Registered <small>· keep roadworthy</small></div></div>
+      <div class="stat"><div class="k">Airbags</div><div class="v">Did not deploy</div></div>
+    </div>
+    <div class="progress-wrap">
+      <div class="progress-line"><span>Repair progress</span><span>Stage 2 of 12 · next: move the car home</span></div>
+      <div class="progress-track"><div class="progress-fill" style="width:15%"></div></div>
+    </div>
+  </header>
+
+  <div class="layout">
+    <nav class="docs" aria-label="Documents">
+      <div class="navlabel">Documents</div>
+      <div class="navlist" role="tablist">
+        <button class="navitem" role="tab" data-doc="overview" aria-current="true">
+          <span class="num">01</span><span class="label">Overview</span><span class="dot doing" title="live"></span>
+        </button>
+        <button class="navitem" role="tab" data-doc="plan">
+          <span class="num">02</span><span class="label">Plan</span><span class="dot doing" title="in progress"></span>
+        </button>
+        <button class="navitem is-pending" role="tab" data-doc="parts">
+          <span class="num">03</span><span class="label">Parts</span><span class="dot pending" title="not started"></span>
+        </button>
+        <button class="navitem is-pending" role="tab" data-doc="todo">
+          <span class="num">04</span><span class="label">TODO</span><span class="dot pending" title="not started"></span>
+        </button>
+        <button class="navitem is-pending" role="tab" data-doc="risks">
+          <span class="num">05</span><span class="label">Risks</span><span class="dot pending" title="not started"></span>
+        </button>
+        <button class="navitem is-pending" role="tab" data-doc="equipment">
+          <span class="num">06</span><span class="label">Equipment</span><span class="dot pending" title="not started"></span>
+        </button>
+      </div>
+    </nav>
+
+    <main class="content">
+      <!-- OVERVIEW -->
+      <section class="doc active" id="doc-overview">
+        <h2>Overview</h2>
+        <p class="subtitle">The project at a glance. Who, what, and what "done" looks like.</p>
+
+        <h3>Goal</h3>
+        <p>Coordinate the repair of Ben's Mitsubishi Pajero. Get it back on the road, legal and roadworthy, for a low cost.</p>
+
+        <h3>The car</h3>
+        <ul>
+          <li>2009 Mitsubishi Pajero VR-X</li>
+          <li>Diesel · NT Series · Australia</li>
+        </ul>
+
+        <h3>Who does the work</h3>
+        <ul>
+          <li>Ben does the work himself.</li>
+          <li>He has limited experience repairing cars.</li>
+          <li>He is keen. He wants to learn and enjoy this.</li>
+        </ul>
+
+        <h3>How we work</h3>
+        <ul>
+          <li>Plain, practical terms. Short sentences. The Hemingway way.</li>
+          <li>Break the work into small steps.</li>
+          <li>One task at a time. No pressure.</li>
+        </ul>
+
+        <h3>Damage</h3>
+        <p>The tow bar pushed into the front of the Pajero. It crushed the grille, went through the radiator fans, and into the radiator.</p>
+        <ul>
+          <li>Front grille crushed.</li>
+          <li>Radiator fans broken.</li>
+          <li>Radiator holed. A large amount of coolant spilled on the road. It needs replacing.</li>
+          <li>Bumper bar crushed.</li>
+          <li>Radiator support bracket bent. The radiator hangs off it.</li>
+          <li>Bonnet latch bent — now removed to open the bonnet.</li>
+        </ul>
+
+        <h3>Mechanical assessment</h3>
+        <p>The car started and drove after the crash. Ben shut it off to cool, then drove it only about 200m, slow, to park it. Short and slow — so we do not believe the engine got hot enough to be damaged.</p>
+        <div class="callout"><p><strong>Do not run it again until the cooling system is fixed.</strong> A first look at the open engine bay backs the theory: damage looks limited to the radiator, the fans, and the mounting brackets. We confirm it fully once the new radiator is in.</p></div>
+
+        <h3>Parts that look OK</h3>
+        <ul>
+          <li>Headlights — but the sun-damaged outer covers need replacing.</li>
+          <li>Spot lights.</li>
+          <li>Hood — maybe modest damage, but looks OK.</li>
+          <li>Front side panels — look good; may be slightly bent.</li>
+        </ul>
+
+        <h3>Objectives</h3>
+        <ul>
+          <li>Repair for minimum cost — but not if it overwhelms Ben.</li>
+          <li>Fit a second-hand alloy bull bar in place of the bumper.</li>
+          <li>Buy parts second-hand from wreckers or Facebook Marketplace.</li>
+        </ul>
+
+        <h3>Success looks like</h3>
+        <ul>
+          <li>The Pajero starts, runs, and drives.</li>
+          <li>The cooling system holds and does not overheat.</li>
+          <li>Lights and safety gear work.</li>
+          <li>The repairs are sound and it is safe and roadworthy.</li>
+          <li>Ben finishes it feeling good about the work.</li>
+        </ul>
+      </section>
+
+      <!-- PLAN -->
+      <section class="doc" id="doc-plan">
+        <h2>Plan</h2>
+        <p class="subtitle">The repair, stage by stage, front to back. One stage at a time. Each has a clear finish line.</p>
+
+        <h3>Progress so far</h3>
+        <ul>
+          <li>Broke off the smashed grille to reach the bonnet latch.</li>
+          <li>Unbolted the bent latch. Detached the release cable and sensor wires.</li>
+          <li>The bonnet is open. The engine bay is visible.</li>
+          <li>A first look confirms the theory: damage looks limited to the radiator, fans, and brackets.</li>
+          <li><strong>Next:</strong> the car is still parked ~10 min away. Organise a flatbed to move it to Ben's driveway.</li>
+        </ul>
+
+        <h3>The stages</h3>
+
+        <div class="stage">
+          <div class="stage-head"><span class="st-num">00</span><span class="st-title">Set up</span><span class="badge pending">Next</span></div>
+          <p class="goal">A safe, tidy place to work.</p>
+          <ul><li>Flat ground, chock the wheels, handbrake on.</li><li>Light, a parts bench, boxes, bags, a marker.</li><li>Get the NT Pajero workshop manual. Start a phone photo album.</li></ul>
+          <p class="donewhen"><b>Done when:</b> the car is safe and the workspace is ready.</p>
+        </div>
+
+        <div class="stage">
+          <div class="stage-head"><span class="st-num">01</span><span class="st-title">Open the bonnet</span><span class="badge done">Done</span></div>
+          <p class="goal">Get the bonnet open to see the damage.</p>
+          <ul><li>Broke off the grille to reach the latch.</li><li>Unbolted the latch. Detached the cable and sensor wires.</li></ul>
+          <p class="donewhen"><b>Done:</b> bonnet open, engine bay visible.</p>
+        </div>
+
+        <div class="stage">
+          <div class="stage-head"><span class="st-num">02</span><span class="st-title">Get the car home</span><span class="badge doing">Next</span></div>
+          <p class="goal">Move the car to Ben's driveway. Do not drive it — the radiator is holed and the engine has no cooling. Ten minutes on the road could cook it.</p>
+          <ul><li>First, check for roadside cover. NRMA or similar may tow it free. Make this call first.</li><li>No cover? Book a flatbed (tilt-tray) tow. Ring 2–3 local operators for a short move. Rough cost A$100–A$180.</li><li>Say it rolls, steers, and brakes — that makes loading easy and can lower the price.</li><li>A borrowed car trailer works too, if the tow vehicle can pull 2 tonnes.</li><li>Do not strap-tow it yourself. It is an automatic 4x4; flat-towing can wreck the gearbox.</li></ul>
+          <p class="donewhen"><b>Done when:</b> the car sits in Ben's driveway, ready to strip.</p>
+        </div>
+
+        <div class="stage">
+          <div class="stage-head"><span class="st-num">03</span><span class="st-title">Strip the front</span><span class="badge doing">In progress</span></div>
+          <p class="goal">Remove the smashed parts. Reveal what is behind them.</p>
+          <ul><li>Grille removed. ✓</li><li>Drain any coolant left — catch it, keep it off the drive and away from pets. It is toxic.</li><li>Remove the bumper bar, the broken fans, the holed radiator.</li><li>Photograph and bag every bolt.</li></ul>
+          <p class="donewhen"><b>Done when:</b> the front is stripped to the support panel.</p>
+        </div>
+
+        <div class="stage">
+          <div class="stage-head"><span class="st-num">04</span><span class="st-title">Assess hidden damage</span><span class="badge pending">To do</span></div>
+          <p class="goal">Know the full picture before spending money.</p>
+          <ul><li>Check the radiator support bracket — straighten or replace?</li><li>Check the A/C condenser and the intercooler and pipes. They sit in the crush zone.</li><li>Look for oil in the coolant, or coolant in the oil.</li><li>Write down every damaged part.</li></ul>
+          <p class="donewhen"><b>Done when:</b> we have a full damage list and know the engine is sound.</p>
+        </div>
+
+        <div class="stage">
+          <div class="stage-head"><span class="st-num">05</span><span class="st-title">Source the parts</span><span class="badge pending">To do</span></div>
+          <p class="goal">Gather every part before major refitting.</p>
+          <ul><li>Confirm each part number against the car.</li><li>Second-hand where safe; new or known-good for anything that keeps the engine cool.</li><li>Second-hand alloy bull bar; new headlight covers.</li></ul>
+          <p class="donewhen"><b>Done when:</b> every part is in hand and checked.</p>
+        </div>
+
+        <div class="stage">
+          <div class="stage-head"><span class="st-num">06</span><span class="st-title">Repair the support structure</span><span class="badge pending">To do</span></div>
+          <p class="goal">A straight, solid frame for the radiator.</p>
+          <ul><li>Straighten the bent bracket, or fit a good used one.</li><li>Check it is square. Treat bare metal against rust.</li></ul>
+          <p class="donewhen"><b>Done when:</b> the radiator will sit true.</p>
+        </div>
+
+        <div class="stage">
+          <div class="stage-head"><span class="st-num">07</span><span class="st-title">Fit the cooling system</span><span class="badge pending">To do</span></div>
+          <p class="goal">A cooling system that holds and works.</p>
+          <ul><li>Fit the new radiator and fans. Reconnect the wiring.</li><li>Fit condenser and intercooler if replaced. New hoses and clamps.</li><li>Fill with correct coolant. Bleed the air out.</li></ul>
+          <p class="donewhen"><b>Done when:</b> the system is fitted, full, and bled.</p>
+        </div>
+
+        <div class="stage">
+          <div class="stage-head"><span class="st-num">08</span><span class="st-title">Fit the bull bar</span><span class="badge pending">To do</span></div>
+          <p class="goal">The alloy bull bar mounted in place of the bumper.</p>
+          <ul><li>Check it fits the NT mounts. Bolt to the chassis rails.</li><li>Check it sits level and clears the bonnet and lights. Refit spot lights.</li></ul>
+          <p class="donewhen"><b>Done when:</b> the bull bar is mounted, level, and secure.</p>
+        </div>
+
+        <div class="stage">
+          <div class="stage-head"><span class="st-num">09</span><span class="st-title">Refit the front trim</span><span class="badge pending">To do</span></div>
+          <p class="goal">The front looks finished and the lights work.</p>
+          <ul><li>Fit the grille and new headlight covers.</li><li>Refit and aim the headlights. Check every front light.</li></ul>
+          <p class="donewhen"><b>Done when:</b> the front is trimmed and every light works.</p>
+        </div>
+
+        <div class="stage">
+          <div class="stage-head"><span class="st-num">10</span><span class="st-title">Test the cooling</span><span class="badge pending">To do</span></div>
+          <p class="goal">Prove the engine stays cool and dry.</p>
+          <ul><li>Start cold. Watch the temperature. Check the fans cut in.</li><li>Check for leaks. Pressure-test if a tester is on hand.</li><li>Check again for oil and water mixing.</li></ul>
+          <p class="donewhen"><b>Done when:</b> it reaches normal temperature, holds it, and does not leak.</p>
+        </div>
+
+        <div class="stage">
+          <div class="stage-head"><span class="st-num">11</span><span class="st-title">Roadworthy check</span><span class="badge pending">To do</span></div>
+          <p class="goal">Assess the repairs for roadworthiness. Make sure the work is safe and sound before the car goes back on the road.</p>
+          <ul><li>Check every light works: head, spot, park, indicator, brake. Check the horn and wipers.</li><li>Check nothing in the front is loose — tug the bull bar, radiator, and fittings.</li><li>Check for coolant and oil leaks. Check the coolant holds its level after a run.</li><li>Confirm it steers, brakes, and drives straight.</li></ul>
+          <p class="donewhen"><b>Done when:</b> the repairs are sound and the car is safe and roadworthy.</p>
+        </div>
+
+        <div class="stage">
+          <div class="stage-head"><span class="st-num">12</span><span class="st-title">Finish</span><span class="badge pending">To do</span></div>
+          <p class="goal">Close the job.</p>
+          <ul><li>Final photos. Dispose of old coolant and parts safely.</li><li>Update the documents. Ben drives his Pajero.</li></ul>
+          <p class="donewhen"><b>Done when:</b> the car is back on the road and Ben is happy.</p>
+        </div>
+
+        <h3>Open questions</h3>
+        <ul>
+          <li>Is the A/C condenser damaged? Confirm in Stage 3.</li>
+          <li>Is the intercooler or its piping damaged? Confirm in Stage 3.</li>
+          <li>Does the bull bar need a mount kit specific to the NT Pajero?</li>
+          <li>Do the front side panels need straightening, or do they pass as-is?</li>
+        </ul>
+      </section>
+
+      <!-- PLACEHOLDERS -->
+      <section class="doc" id="doc-parts">
+        <h2>Replacement parts</h2>
+        <p class="subtitle">Parts to find, buy, and fit — with cost and source.</p>
+        <div class="placeholder"><div class="big">Not started yet</div>
+          <p>This document is next in line. It will list every part to replace — radiator, fans, brackets, bull bar, headlight covers — with a target price, a likely source (wrecker or Marketplace), and a status: needed, found, bought, fitted.</p></div>
+      </section>
+
+      <section class="doc" id="doc-todo">
+        <h2>TODO</h2>
+        <p class="subtitle">The live task list. What is next.</p>
+        <div class="placeholder"><div class="big">Not started yet</div>
+          <p>A short, tickable list pulled from the Plan, so Ben always knows the single next thing to do. Built once the Plan settles.</p></div>
+      </section>
+
+      <section class="doc" id="doc-risks">
+        <h2>Risk assessment</h2>
+        <p class="subtitle">What can go wrong. How we stop it.</p>
+        <div class="placeholder"><div class="big">Not started yet</div>
+          <p>Safety and project risks with mitigations — working under a car, handling toxic coolant, hidden engine damage from running hot (rated low, but checked), and budget or morale overrun. Built alongside the equipment list.</p></div>
+      </section>
+
+      <section class="doc" id="doc-equipment">
+        <h2>Equipment</h2>
+        <p class="subtitle">Tools and gear needed for the job.</p>
+        <div class="placeholder"><div class="big">Not started yet</div>
+          <p>The tools and safety gear each stage needs — from wheel chocks and a drain pan to spanners, a coolant tester, gloves, and eye protection. Flags what Ben has and what he must borrow or buy.</p></div>
+      </section>
+    </main>
+  </div>
+
+  <footer class="foot">
+    Pajero Repair Hub · one page, all documents · use <span class="kbd">←</span> <span class="kbd">→</span> or <span class="kbd">1</span>–<span class="kbd">6</span> to switch
+  </footer>
+</div>
+
+<script>
+  (function () {
+    var items = Array.prototype.slice.call(document.querySelectorAll('.navitem'));
+    var docs = {};
+    items.forEach(function (b) { docs[b.dataset.doc] = document.getElementById('doc-' + b.dataset.doc); });
+
+    function show(name) {
+      items.forEach(function (b) {
+        var on = b.dataset.doc === name;
+        b.setAttribute('aria-current', on ? 'true' : 'false');
+        if (docs[b.dataset.doc]) docs[b.dataset.doc].classList.toggle('active', on);
+      });
+      var main = document.querySelector('main.content');
+      if (main) main.scrollTop = 0;
+    }
+
+    items.forEach(function (b) {
+      b.addEventListener('click', function () { show(b.dataset.doc); });
+    });
+
+    document.addEventListener('keydown', function (e) {
+      if (e.target && /input|textarea|select/i.test(e.target.tagName)) return;
+      var order = items.map(function (b) { return b.dataset.doc; });
+      var cur = items.findIndex(function (b) { return b.getAttribute('aria-current') === 'true'; });
+      if (e.key === 'ArrowRight') { show(order[Math.min(order.length - 1, cur + 1)]); e.preventDefault(); }
+      else if (e.key === 'ArrowLeft') { show(order[Math.max(0, cur - 1)]); e.preventDefault(); }
+      else if (/^[1-6]$/.test(e.key)) { var i = parseInt(e.key, 10) - 1; if (order[i]) { show(order[i]); e.preventDefault(); } }
+    });
+  })();
+</script>
