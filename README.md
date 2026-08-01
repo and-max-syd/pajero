@@ -48,7 +48,7 @@ The Pajero ran into the back of another car. That car had a tow bar. The tow bar
 
 After the crash the car started and drove. It seemed to run fine. But it had lost its coolant, so it had no engine cooling. Ben shut it off and let it cool. He then drove it only about 200m around the corner to park it long term. That run was short and slow. So we do not believe the engine got hot enough to be damaged.
 
-Do not run it again until the cooling system is fixed. Because it started and drove without other trouble, we suspect the main mechanical damage is limited to the radiator and its fans. We have since broken off the grille and opened the bonnet. A first look at the engine bay backs this up. The damage looks limited to the radiator, the fans, and the mounting brackets. We confirm it fully once the front is stripped and the new radiator is in.
+Because it started and drove without other trouble, we suspect the main mechanical damage is limited to the radiator and its fans. We have since broken off the grille and opened the bonnet. A first look at the engine bay backs this up. The damage looks limited to the radiator, the fans, and the mounting brackets. We confirm it fully once the front is stripped and the new radiator is in.
 
 ## Parts that look OK
 
