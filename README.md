@@ -53,8 +53,7 @@ Front to back, behind the grille:
 3. A/C condenser — likely hit
 4. Electric fan and shroud, in front of the radiator — broken
 5. Radiator — holed
-6. Viscous fan clutch, engine-driven, behind the radiator — probably fine
-7. Engine
+6. Engine
 
 Ben's car has the electric fan(s) in front of the radiator, so the tow bar went through them into the radiator. The radiator support panel holds the condenser and radiator; it is bent and needs replacing. The intercooler is not in this stack — it sits on the separate turbo air path. See the Front-end layout diagram in the hub.
 

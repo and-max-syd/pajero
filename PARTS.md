@@ -27,7 +27,6 @@ Keep these new or known-good. They keep the engine alive.
 
 Notes:
 * The fan most likely hit is the front electric fan, ahead of the radiator. Confirm its part number once it is off the car.
-* The engine-driven viscous fan clutch (part [1320A033](https://www.ebay.com.au/itm/363264345067)) sits behind the radiator, so a frontal hit is unlikely to reach it. Inspect it in Stage 4 — it is probably fine. Listed here only for reference, not as a part to buy.
 * Radiator cross-reference numbers seen: MR968055, MR529225, and others. 1350A154 is the alternate — confirm auto vs manual before buying.
 
 ## Front structure and body

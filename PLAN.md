@@ -63,6 +63,8 @@ Done when: the car sits in Ben's driveway, ready to strip.
 
 Goal: remove the smashed parts, one at a time. Reveal what is behind them.
 
+See the front-end layout diagram in the hub (Overview → Front-end layout) for what sits where.
+
 Prep first:
 
 * Grille removed. Done.
@@ -82,7 +84,7 @@ Done when: the front is stripped back to the support panel and the crash zone is
 
 Goal: know the full picture before we spend money. Find what the crash hid.
 
-Work slowly. Compare the hit side (left) with the untouched right side. The right side is your reference for how the left should look and sit.
+Work slowly. Compare the hit side (left) with the untouched right side. The right side is your reference for how the left should look and sit. See the front-end layout diagram in the hub (Overview → Front-end layout).
 
 **Structure and panels**
 
