@@ -61,15 +61,19 @@ Done when: the car sits in Ben's driveway, ready to strip.
 
 ## Stage 3 — Strip the front — IN PROGRESS
 
-Goal: remove the smashed parts. Reveal what is behind them.
+Goal: remove the smashed parts, one at a time. Reveal what is behind them.
+
+Prep first:
 
 * Grille removed. Done.
 * Let the engine be cold. Place a drain pan under the radiator.
 * Drain any coolant left in the system. Catch it. Do not let it reach drains or pets. Coolant is toxic.
-* Remove the crushed bumper bar.
-* Remove the broken cooling fans.
-* Disconnect and remove the damaged radiator.
-* Photograph and bag every bolt as it comes off. Number each bag, and call that number out in the photo or video. Then the picture, the clip, and the bag all match.
+
+Then remove one part at a time. Photograph and bag the bolts for each part before you move to the next. Number each bag and call the number out in the photo or video.
+
+* **Remove the bumper bar.** [How-to — Pajero 4 (2006+), written](https://remont-bampera.com/en/mitsubishi-pajero-montero-4-after-2006)
+* **Remove the cooling fan and shroud.** [How-to — 4M41 diesel, video](https://www.youtube.com/watch?v=R1sJch_aF-I)
+* **Remove the radiator.** [How-to — Pajero NT, video](https://www.youtube.com/watch?v=wNWGfpytUsM)
 
 Done when: the front is stripped back to the support panel and the crash zone is open to view.
 
@@ -135,12 +139,13 @@ Done when: the new support structure is straight and the radiator will sit true.
 
 ## Stage 7 — Fit the cooling system
 
-Goal: a cooling system that holds and works.
+Goal: a cooling system that holds and works. Fit one part at a time.
 
-* Fit the new radiator.
-* Fit the new fans. Reconnect the wiring.
-* Fit the condenser and intercooler if they were replaced.
-* Fit all hoses. Use new clamps.
+* **Fit the radiator.** [How-to — Pajero NT, video](https://www.youtube.com/watch?v=wNWGfpytUsM)
+* **Fit the cooling fan and shroud.** Reconnect the wiring. [How-to — 4M41 diesel, video](https://www.youtube.com/watch?v=R1sJch_aF-I)
+* **Fit the A/C condenser** — only if it was replaced. Have it de-gassed and re-gassed by a licensed air-con tech. Do not vent the refrigerant; it is illegal and dangerous.
+* **Fit the intercooler and pipes** — only if replaced. [How-to — NS diesel intercooler, written](https://www.pajeroforum.com.au/forum/general-information/mechanical/64891-inlet-intercooler-removal-ns-diesel)
+* **Fit the hoses.** Use new clamps.
 * Fill with the correct coolant. Do not use the spilled old coolant.
 * Bleed the air out of the system.
 
@@ -150,8 +155,7 @@ Done when: the cooling system is fitted, full, and bled.
 
 Goal: the alloy bull bar mounted in place of the bumper.
 
-* Check the bull bar fits the NT Pajero mounts.
-* Bolt it to the chassis rails. Use the right bolts.
+* **Fit the bull bar.** Check it fits the NT mounts. Bolt it to the chassis rails with the right bolts. [How-to — ARB bull bar on a Pajero NT, video part 1](https://www.youtube.com/watch?v=P7k1V2pBYOc) and [part 2](https://www.youtube.com/watch?v=sWVyes5-A44). Ben's second-hand bar may not be an ARB, but the fit is similar.
 * Check it sits level and clears the bonnet and lights.
 * Refit the spot lights.
 
@@ -159,11 +163,11 @@ Done when: the bull bar is mounted, level, and secure.
 
 ## Stage 9 — Refit the front trim
 
-Goal: the front looks finished and the lights work.
+Goal: the front looks finished and the lights work. Fit one part at a time.
 
-* Fit the grille.
-* Fit the new headlight covers.
-* Refit and aim the headlights.
+* **Fit the grille.** [How-to — Pajero grille, video](https://www.youtube.com/watch?v=1OFKUki7Bj0)
+* **Fit the new headlight covers** to the headlights before you refit them.
+* **Refit and aim the headlights.** [How-to — Pajero NT headlight, written](https://www.pajeroforum.com.au/forum/vehicles/generation-4-2-pajero/64660-nt-headlight-removal)
 * Check all front lights: head, spot, park, indicator.
 
 Done when: the front is trimmed and every light works.

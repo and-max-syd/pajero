@@ -23,11 +23,11 @@ Keep these new or known-good. They keep the engine alive.
 | --- | --- | --- | --- | --- |
 | Radiator (engine cooling) | [1350A155](https://hollanderparts.com.au/MITSUBISHI-PAJERO-Radiator-2012/ns92200875/) (alt 1350A154) | Wrecker / parts store | 200 | Needed |
 | Radiator/condenser fan (electric, front) | TBC | Wrecker | 60 | Needed |
-| Fan clutch, viscous coupling (4M41) | [1320A033](https://www.ebay.com.au/itm/363264345067) | Wrecker / online | TBC | Check |
 | Radiator hoses and clamps | TBC | Parts store | 40 | Needed |
 
 Notes:
-* The front electric fan is the one most likely hit through the grille. 1320A033 is the engine-driven viscous fan clutch, which sits behind the radiator — check whether it was damaged too. Confirm which fan the crash broke.
+* The fan most likely hit is the front electric fan, ahead of the radiator. Confirm its part number once it is off the car.
+* The engine-driven viscous fan clutch (part [1320A033](https://www.ebay.com.au/itm/363264345067)) sits behind the radiator, so a frontal hit is unlikely to reach it. Inspect it in Stage 4 — it is probably fine. Listed here only for reference, not as a part to buy.
 * Radiator cross-reference numbers seen: MR968055, MR529225, and others. 1350A154 is the alternate — confirm auto vs manual before buying.
 
 ## Front structure and body
