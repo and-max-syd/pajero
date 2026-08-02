@@ -73,6 +73,7 @@ Then remove one part at a time. Photograph and bag the bolts for each part befor
 
 * **Remove the bumper bar.** [How-to — Pajero 4 (2006+), written](https://remont-bampera.com/en/mitsubishi-pajero-montero-4-after-2006)
 * **Remove the cooling fan and shroud.** [How-to — 4M41 diesel, video](https://www.youtube.com/watch?v=R1sJch_aF-I)
+* **Free the A/C condenser.** It sits in front of the radiator, so it has to move to get the radiator out. If it is undamaged and the lines have slack, unbolt it and ease it aside with the lines still connected — that avoids the de-gas and its cost. If it must come off (damaged, or no slack), the refrigerant must first be recovered by a licensed air-con tech; it is illegal to vent it in Australia. Then undo the two lines, cap the ports to keep dirt and moisture out, and remove it. [Why recover, not vent — ARC](https://arctick.org/refrigerant-handling-licence/refrigerant-recovery/) · [Disconnect and replace a condenser — written](https://www.yourmechanic.com/article/how-to-replace-an-ac-condenser-by-spencer-clayton) · [Disconnecting A/C lines — video](https://www.youtube.com/watch?v=Oii4eKizdb8)
 * **Remove the radiator.** [How-to — Pajero NT, video](https://www.youtube.com/watch?v=wNWGfpytUsM)
 
 Done when: the front is stripped back to the support panel and the crash zone is open to view.
@@ -198,7 +199,19 @@ Goal: assess the repairs for roadworthiness. Make sure the work is safe and soun
 
 Done when: the repairs are sound and the car is safe and roadworthy.
 
-## Stage 12 — Finish
+## Stage 12 — Re-gas the air-con
+
+Goal: cold air-con again — only if the system was opened.
+
+* Skip this if the condenser was eased aside with the lines still connected. The system was never opened, so it holds its gas.
+* If the condenser was disconnected or replaced, the system is empty and open. It needs a recharge.
+* Once the car runs and drives, take it to a licensed air-con shop.
+* They vacuum the system, leak-test it, then recharge it with the correct refrigerant and oil.
+* This must be done by a licensed tech. It is illegal to buy or handle the gas yourself in Australia.
+
+Done when: the air-con blows cold and holds its charge, or the system was never opened.
+
+## Stage 13 — Finish
 
 Goal: close the job.
 

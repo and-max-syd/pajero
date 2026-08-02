@@ -48,6 +48,7 @@ Repair steps (Pajero-specific where possible):
 * [Headlight removal — Pajero NT (forum, written)](https://www.pajeroforum.com.au/forum/vehicles/generation-4-2-pajero/64660-nt-headlight-removal)
 * [Intercooler removal — Pajero NS diesel (forum, written)](https://www.pajeroforum.com.au/forum/general-information/mechanical/64891-inlet-intercooler-removal-ns-diesel)
 * Bull bar fitting — ARB on Pajero NT (video): [part 1](https://www.youtube.com/watch?v=P7k1V2pBYOc), [part 2](https://www.youtube.com/watch?v=sWVyes5-A44)
+* A/C condenser — [why refrigerant must be recovered, not vented — ARC (Australia)](https://arctick.org/refrigerant-handling-licence/refrigerant-recovery/), [disconnect and replace a condenser (written)](https://www.yourmechanic.com/article/how-to-replace-an-ac-condenser-by-spencer-clayton), [disconnecting A/C lines (video)](https://www.youtube.com/watch?v=Oii4eKizdb8)
 * [Treating metal against rust — converter and primer (video)](https://www.youtube.com/watch?v=4LqgailuiKE) — self-etch primer on clean bare metal; rust converter on existing rust.
 * [Rust prevention and priming instructions — Eastwood (written)](https://www.eastwood.com/techlib-chsinst)
 
