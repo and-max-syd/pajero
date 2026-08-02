@@ -335,14 +335,11 @@
         <button class="navitem" role="tab" data-doc="towing">
           <span class="num">04</span><span class="label">Towing</span><span class="dot doing" title="in progress"></span>
         </button>
-        <button class="navitem is-pending" role="tab" data-doc="risks">
-          <span class="num">05</span><span class="label">Risks</span><span class="dot pending" title="not started"></span>
-        </button>
         <button class="navitem is-pending" role="tab" data-doc="equipment">
-          <span class="num">06</span><span class="label">Equipment</span><span class="dot pending" title="not started"></span>
+          <span class="num">05</span><span class="label">Equipment</span><span class="dot pending" title="not started"></span>
         </button>
         <button class="navitem" role="tab" data-doc="links">
-          <span class="num">07</span><span class="label">Links</span><span class="dot doing" title="in progress"></span>
+          <span class="num">06</span><span class="label">Links</span><span class="dot doing" title="in progress"></span>
         </button>
       </div>
     </nav>
@@ -629,13 +626,6 @@
         <p style="font-size:.82rem;color:var(--ink-faint);margin:12px 2px 0;">No operator publishes a fixed price — all quote per job. Numbers come from online listings and may change; confirm when you call. More quotes: <a href="https://www.oneflare.com.au/towing/nsw/mount-kuring-gai" target="_blank" rel="noopener">Oneflare</a>.</p>
       </section>
 
-      <section class="doc" id="doc-risks">
-        <h2>Risk assessment</h2>
-        <p class="subtitle">What can go wrong. How we stop it.</p>
-        <div class="placeholder"><div class="big">Not started yet</div>
-          <p>Safety and project risks with mitigations — working under a car, handling toxic coolant, hidden engine damage from running hot (rated low, but checked), and budget or morale overrun. Built alongside the equipment list.</p></div>
-      </section>
-
       <section class="doc" id="doc-equipment">
         <h2>Equipment</h2>
         <p class="subtitle">Tools and gear needed for the job.</p>
@@ -691,7 +681,7 @@
   </div>
 
   <footer class="foot">
-    Pajero Repair Hub · one page, all documents · use <span class="kbd">←</span> <span class="kbd">→</span> or <span class="kbd">1</span>–<span class="kbd">7</span> to switch
+    Pajero Repair Hub · one page, all documents · use <span class="kbd">←</span> <span class="kbd">→</span> or <span class="kbd">1</span>–<span class="kbd">6</span> to switch
   </footer>
 </div>
 
@@ -725,7 +715,7 @@
       var cur = items.findIndex(function (b) { return b.getAttribute('aria-current') === 'true'; });
       if (e.key === 'ArrowRight') { show(order[Math.min(order.length - 1, cur + 1)]); e.preventDefault(); }
       else if (e.key === 'ArrowLeft') { show(order[Math.max(0, cur - 1)]); e.preventDefault(); }
-      else if (/^[1-7]$/.test(e.key)) { var i = parseInt(e.key, 10) - 1; if (order[i]) { show(order[i]); e.preventDefault(); } }
+      else if (/^[1-6]$/.test(e.key)) { var i = parseInt(e.key, 10) - 1; if (order[i]) { show(order[i]); e.preventDefault(); } }
     });
   })();
 </script>
