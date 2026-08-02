@@ -94,7 +94,7 @@ Work slowly. Compare the hit side (left) with the untouched right side. The righ
 **Cooling and engine bay**
 
 * Check the A/C condenser in front of the radiator. Look for bent fins, dents, and oily residue. Oily residue is leaking refrigerant oil.
-* Check the intercooler and its pipes. Look for dents, splits, and loose clamps. Rubber hoses crack at the bends.
+* Glance at the intercooler and its pipes. It is on the separate turbo air path and may sit clear of the impact — a quick look is enough unless it is in the crash line. Look for dents, splits, and loose clamps.
 * Spin each fan by hand. Feel and listen for rubbing, cracks, or a loose viscous coupling.
 * Check the A/C compressor and the belts at the front of the engine. The crash pushed inward — look for anything shifted or touching.
 * Trace the wiring and connectors. Look for pulled, torn, or unplugged plugs. Reconnect the bonnet latch sensor wires we detached.

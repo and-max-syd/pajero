@@ -58,15 +58,20 @@ Note: separate covers are hard to source. Options — a headlight restoration ki
 | Coolant — Mitsubishi Super Long Life Coolant (SLLC) | TBC | Parts store | 35 | Needed |
 | Misc fasteners and clips | — | Parts store | 20 | Needed |
 
-## To confirm after the strip (Stage 3–4)
+## Check after the strip (Stage 3–4)
 
-These sit in the crash zone. Check them once the front is stripped.
+Look at these once the front is stripped. Only the condenser is a likely casualty.
 
 | Part | Part number | Source | Est. (A$) | Status |
 | --- | --- | --- | --- | --- |
 | A/C condenser | [7812A156](https://www.myautoparts.com.au/products/a-c-condenser-aftermarket-suits-mitsubishi-pajero-1) (x-ref MR513110 / MN123332) | Wrecker | TBC | Check |
-| Intercooler (charge-air cooler) | [1530A052](https://www.ebay.com.au/itm/192975862962) (verify) | Wrecker | TBC | Check |
 | Fan shroud | TBC | Wrecker | TBC | Check |
+| Intercooler (air-to-air) | [1530A052](https://www.ebay.com.au/itm/192975862962) (verify) | Wrecker | TBC | Unlikely |
+
+Notes:
+* The A/C condenser sits directly in front of the radiator, so the tow bar would have passed through it to reach the radiator. It is the most likely hidden casualty. Check it closely.
+* The intercooler is on the separate turbo air path, not the coolant stack, and its mount may sit clear of the impact line. Give it and its pipes a quick look, but it is probably fine. Replace it only if you find real damage.
+* The fan shroud wraps the fans and radiator. If those were hit, it may be cracked.
 
 ## Rough running total
 
