@@ -133,7 +133,7 @@ Goal: a straight, solid frame for the radiator to hang on.
 
 * Replace the bent radiator support bracket with a good second-hand one.
 * Check it is square and true.
-* Treat any bare metal against rust. See [how to treat bare metal against rust](https://mechanicinsider.com/best-automotive-primer-for-bare-metal/).
+* Treat any bare metal against rust. On clean bare metal, use a self-etch primer. On any existing rust, use a rust converter first. [How-to — converter and primer on metal (video)](https://www.youtube.com/watch?v=4LqgailuiKE).
 
 Done when: the new support structure is straight and the radiator will sit true.
 

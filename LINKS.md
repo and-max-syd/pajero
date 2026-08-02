@@ -48,7 +48,8 @@ Repair steps (Pajero-specific where possible):
 * [Headlight removal — Pajero NT (forum, written)](https://www.pajeroforum.com.au/forum/vehicles/generation-4-2-pajero/64660-nt-headlight-removal)
 * [Intercooler removal — Pajero NS diesel (forum, written)](https://www.pajeroforum.com.au/forum/general-information/mechanical/64891-inlet-intercooler-removal-ns-diesel)
 * Bull bar fitting — ARB on Pajero NT (video): [part 1](https://www.youtube.com/watch?v=P7k1V2pBYOc), [part 2](https://www.youtube.com/watch?v=sWVyes5-A44)
-* [Treating bare metal against rust (primer guide)](https://mechanicinsider.com/best-automotive-primer-for-bare-metal/) — self-etch primer and rust converter basics.
+* [Treating metal against rust — converter and primer (video)](https://www.youtube.com/watch?v=4LqgailuiKE) — self-etch primer on clean bare metal; rust converter on existing rust.
+* [Rust prevention and priming instructions — Eastwood (written)](https://www.eastwood.com/techlib-chsinst)
 
 ## Cooling and aftermarket
 

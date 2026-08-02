@@ -64,7 +64,7 @@ Look at these once the front is stripped. Only the condenser is a likely casualt
 
 | Part | Part number | Source | Est. (A$) | Status |
 | --- | --- | --- | --- | --- |
-| A/C condenser | [7812A156](https://www.myautoparts.com.au/products/a-c-condenser-aftermarket-suits-mitsubishi-pajero-1) (x-ref MR513110 / MN123332) | Wrecker | TBC | Check |
+| A/C condenser | [7812A156](https://www.autodoc.parts/car-parts/condenser-10455/mitsubishi/pajero-shogun) (x-ref MR513110 / MN123332) | Wrecker | TBC | Check |
 | Fan shroud | TBC | Wrecker | TBC | Check |
 | Intercooler (air-to-air) | [1530A052](https://www.ebay.com.au/itm/192975862962) (verify) | Wrecker | TBC | Unlikely |
 
