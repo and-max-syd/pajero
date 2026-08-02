@@ -461,6 +461,7 @@
           <div class="stage-head"><span class="st-num">02</span><span class="st-title">Get the car home</span><span class="badge doing">Next</span></div>
           <p class="goal">Move the car to Ben's driveway. Do not drive it — the radiator is holed and the engine has no cooling. Ten minutes on the road could cook it.</p>
           <ul><li>Book a flatbed (tilt-tray) tow. Ring 2–3 local operators for a short move. Rough cost A$100–A$180.</li><li>Say it rolls, steers, and brakes — that makes loading easy and can lower the price.</li></ul>
+          <p style="margin:8px 0 0;font-size:.92rem;">See the <a href="#" data-goto="towing">Towing tab</a> for tow companies and quotes.</p>
           <p class="donewhen"><b>Done when:</b> the car sits in Ben's driveway, ready to strip.</p>
         </div>
 
@@ -712,6 +713,10 @@
 
     items.forEach(function (b) {
       b.addEventListener('click', function () { show(b.dataset.doc); });
+    });
+
+    document.querySelectorAll('[data-goto]').forEach(function (el) {
+      el.addEventListener('click', function (e) { e.preventDefault(); show(el.getAttribute('data-goto')); });
     });
 
     document.addEventListener('keydown', function (e) {

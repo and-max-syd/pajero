@@ -55,6 +55,8 @@ Goal: move the car to Ben's driveway. Do not drive it. The radiator is holed. Th
 * Tell them it rolls, steers, and brakes. That makes loading easy and can lower the price.
 * While the car is loaded, note anything that falls off or drips.
 
+See [Towing](TOWING.md) for tow companies that service the area and what to ask for.
+
 Done when: the car sits in Ben's driveway, ready to strip.
 
 ## Stage 3 — Strip the front — IN PROGRESS
