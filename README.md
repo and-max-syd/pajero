@@ -44,6 +44,20 @@ The Pajero ran into the back of another car. That car had a tow bar. The tow bar
 * Support bracket between the radiator and front grille badly bent. The radiator hangs off this bracket. It needs replacing.
 * Bonnet latch bent. It would not release the bonnet.
 
+## Front-end layout
+
+Front to back, behind the grille:
+
+1. Grille — crushed (removed)
+2. Front bumper bar — crushed
+3. A/C condenser — likely hit
+4. Radiator — holed
+5. Electric fan and shroud — broken
+6. Viscous fan clutch, engine-driven — probably fine
+7. Engine
+
+The radiator support panel holds the condenser and radiator; it is bent and needs replacing. The intercooler is not in this stack — it sits on the separate turbo air path. See the Front-end layout diagram in the hub.
+
 ## Mechanical assessment
 
 After the crash the car started and drove. It seemed to run fine. But it had lost its coolant, so it had no engine cooling. Ben shut it off and let it cool. He then drove it only about 200m around the corner to park it long term. That run was short and slow. So we do not believe the engine got hot enough to be damaged.
