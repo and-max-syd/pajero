@@ -55,7 +55,7 @@ Front to back, behind the grille:
 5. Radiator — holed
 6. Engine
 
-Ben's car has the electric fan(s) in front of the radiator, so the tow bar went through them into the radiator. The radiator support panel holds the condenser and radiator; it is bent and needs replacing. The intercooler is not in this stack — it sits on the separate turbo air path. See the Front-end layout diagram in the hub.
+Ben's car has the electric fan(s) in front of the radiator, so the tow bar went through them into the radiator. The radiator support panel holds the condenser and radiator; it is bent and needs replacing. See the Front-end layout diagram in the hub.
 
 ## Mechanical assessment
 
@@ -102,4 +102,5 @@ We build and maintain these documents as the project runs.
 | [Plan](PLAN.md) | The repair, step by step, in order. |
 | [Replacement parts](PARTS.md) | Parts to find, buy, and fit — plus tools and equipment. |
 | [Towing](TOWING.md) | Tow companies for moving the car home. |
+| [Open questions](QUESTIONS.md) | Running list of things to confirm. |
 | [Links](LINKS.md) | Helpful resources — catalogues, parts sources, forums. |

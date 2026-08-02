@@ -260,7 +260,9 @@
   .badge.doing { color: var(--doing); background: color-mix(in srgb, var(--doing) 16%, transparent); }
   .badge.pending { color: var(--pending); background: color-mix(in srgb, var(--pending) 15%, transparent); }
   .stage .goal { color: var(--ink-soft); margin: 8px 0 4px; font-size: .95rem; }
-  .stage ul { margin: 6px 0 0; }
+  .stage ul { margin: 6px 0 0; counter-reset: step; list-style: none; padding-left: 2px; }
+  .stage ul li { counter-increment: step; padding-left: 26px; position: relative; }
+  .stage ul li::before { content: counter(step) "."; position: absolute; left: 0; top: 0; font-weight: 700; color: var(--accent); font-variant-numeric: tabular-nums; }
   .stage .donewhen {
     margin-top: 10px; font-size: .86rem; color: var(--ink-soft);
     font-family: var(--mono); letter-spacing: .01em;
@@ -338,6 +340,9 @@
         </button>
         <button class="navitem subitem" role="tab" data-doc="towing">
           <span class="num" aria-hidden="true">&#8627;</span><span class="label">Towing</span><span class="dot doing" title="in progress"></span>
+        </button>
+        <button class="navitem subitem" role="tab" data-doc="questions">
+          <span class="num" aria-hidden="true">&#8627;</span><span class="label">Open questions</span><span class="dot doing" title="open"></span>
         </button>
         <button class="navitem" role="tab" data-doc="parts">
           <span class="num">03</span><span class="label">Parts</span><span class="dot doing" title="in progress"></span>
@@ -457,7 +462,7 @@
           <span style="display:inline-block;width:10px;height:10px;border-radius:2px;background:var(--accent);vertical-align:middle;"></span> damaged &nbsp;
           <span style="display:inline-block;width:10px;height:10px;border-radius:2px;background:var(--doing);vertical-align:middle;"></span> likely hit
         </p>
-        <p style="font-size:.85rem;color:var(--ink-soft);margin:6px 2px 0;">Ben's car has the electric fan(s) <strong>in front</strong> of the radiator, so the tow bar went through them into the radiator. The <strong>radiator support panel / bracket</strong> holds the condenser and radiator — it is bent and needs replacing. The <strong>intercooler</strong> is not in this stack; it sits on the separate turbo air path.</p>
+        <p style="font-size:.85rem;color:var(--ink-soft);margin:6px 2px 0;">Ben's car has the electric fan(s) <strong>in front</strong> of the radiator, so the tow bar went through them into the radiator. The <strong>radiator support panel / bracket</strong> holds the condenser and radiator — it is bent and needs replacing.</p>
         <p style="font-size:.82rem;color:var(--ink-faint);margin:8px 2px 0;">Schematic of the order of parts, not to scale. Confirm the exact fan position during the Stage 4 strip-down.</p>
       </section>
 
@@ -533,7 +538,7 @@
           <ul>
             <li><b>Structure:</b> the radiator support bracket is badly bent and needs replacing — check how far it spreads. Look for shiny bare metal, cracked paint, ripples, and folds.</li>
             <li><b>Measure:</b> tape the same gap left vs right — grille-to-headlight, headlight-to-guard, bonnet-to-guard. Uneven gaps mean bent metal. Check the chassis rail tips behind the bumper mounts for kinks.</li>
-            <li><b>Cooling:</b> check the A/C condenser closely — it sits in front of the radiator, so it is the most likely hidden casualty. Glance at the intercooler and pipes (separate air path — probably clear). Spin each fan by hand for rubbing or cracks.</li>
+            <li><b>Cooling:</b> check the A/C condenser closely — it sits in front of the radiator, so it is the most likely hidden casualty. Spin each fan by hand for rubbing or cracks.</li>
             <li><b>Engine bay:</b> check the A/C compressor, belts, and wiring — look for anything shifted, touching, torn, or unplugged.</li>
             <li><b>Engine sound?</b> pull the dipstick (milky oil = water in oil), check coolant for an oily sheen. Later, pressure-test the cooling system and run to temp — watch for white smoke and a dropping level (head gasket).</li>
             <li><b>Write it down:</b> photograph and list every damaged part.</li>
@@ -562,7 +567,6 @@
             <li><b>Fit the radiator.</b> <a href="https://www.youtube.com/watch?v=wNWGfpytUsM" target="_blank" rel="noopener">How-to (Pajero NT, video)</a></li>
             <li><b>Fit the cooling fan &amp; shroud.</b> Reconnect the wiring. <a href="https://www.youtube.com/watch?v=R1sJch_aF-I" target="_blank" rel="noopener">How-to (4M41, video)</a></li>
             <li><b>Fit the A/C condenser</b> — only if replaced. Have it de-gassed and re-gassed by a licensed air-con tech; do not vent refrigerant.</li>
-            <li><b>Fit the intercooler &amp; pipes</b> — only if replaced. <a href="https://www.pajeroforum.com.au/forum/general-information/mechanical/64891-inlet-intercooler-removal-ns-diesel" target="_blank" rel="noopener">How-to (NS diesel, written)</a></li>
             <li><b>Fit the hoses.</b> Use new clamps.</li>
             <li>Fill with correct coolant. Bleed the air out.</li>
           </ul>
@@ -622,17 +626,18 @@
           <ul><li>Final photos. Dispose of old coolant and parts safely.</li><li>Update the documents. Ben drives his Pajero.</li></ul>
           <p class="donewhen"><b>Done when:</b> the car is back on the road and Ben is happy.</p>
         </div>
+      </section>
 
-        <h3>Open questions</h3>
+      <section class="doc" id="doc-questions">
+        <h2>Open questions</h2>
+        <p class="subtitle">Things to confirm as the repair goes. We answer them and cross them off.</p>
         <ul>
-          <li>Is the A/C condenser damaged? Confirm in Stage 3.</li>
-          <li>Is the intercooler or its piping damaged? Confirm in Stage 3.</li>
+          <li>Is the A/C condenser damaged? Confirm in Stage 4.</li>
           <li>Does the bull bar need a mount kit specific to the NT Pajero?</li>
           <li>Do the front side panels need straightening, or do they pass as-is?</li>
         </ul>
       </section>
 
-      <!-- PLACEHOLDERS -->
       <section class="doc" id="doc-parts">
         <h2>Replacement parts</h2>
         <p class="subtitle">Buy second-hand where safe. Buy new for anything that keeps the engine cool or the car safe. Prices are rough estimates in A$ — a guide, not a quote.</p>
@@ -684,10 +689,9 @@
           <tbody>
             <tr><td>A/C condenser</td><td><a href="https://www.autodoc.parts/car-parts/condenser-10455/mitsubishi/pajero-shogun" target="_blank" rel="noopener">7812A156</a></td><td>Wrecker</td><td class="num">TBC</td><td><span class="pill check">Check</span></td></tr>
             <tr><td>Fan shroud</td><td>TBC</td><td>Wrecker</td><td class="num">TBC</td><td><span class="pill check">Check</span></td></tr>
-            <tr><td>Intercooler (air-to-air)</td><td><a href="https://www.ebay.com.au/itm/192975862962" target="_blank" rel="noopener">1530A052</a> (verify)</td><td>Wrecker</td><td class="num">TBC</td><td><span class="pill">Unlikely</span></td></tr>
           </tbody>
         </table></div>
-        <p style="font-size:.86rem;color:var(--ink-soft);margin:6px 2px 0;">The A/C condenser sits directly in front of the radiator, so it is the most likely hidden casualty — check it closely. The intercooler is on the separate turbo air path and may sit clear of the impact; give it a quick look, but it is probably fine.</p>
+        <p style="font-size:.86rem;color:var(--ink-soft);margin:6px 2px 0;">The A/C condenser sits directly in front of the radiator, so it is the most likely hidden casualty — check it closely.</p>
 
         <div class="totalcard"><div class="k">Rough running total (known parts)</div><div class="v">~A$1,000–1,300 <span style="font-weight:500;font-size:.9rem;color:var(--ink-soft);">· well under the A$4,000 budget</span></div></div>
         <p style="font-size:.82rem;color:var(--ink-faint);margin:14px 2px 0;">Linked part numbers open a source page — Australian where available — showing the part for this model (Pajero IV V8_W/V9_W 3.2 DI-D). They are strong leads, not gospel — confirm against the VIN before buying.</p>
@@ -789,7 +793,6 @@
           <li><a href="https://remont-bampera.com/en/mitsubishi-pajero-montero-4-after-2006" target="_blank" rel="noopener">Front bumper removal — Pajero 4, 2006+ (written)</a></li>
           <li><a href="https://www.youtube.com/watch?v=1OFKUki7Bj0" target="_blank" rel="noopener">Front grille removal &amp; refit — Pajero (video)</a></li>
           <li><a href="https://www.pajeroforum.com.au/forum/vehicles/generation-4-2-pajero/64660-nt-headlight-removal" target="_blank" rel="noopener">Headlight removal — Pajero NT (written)</a></li>
-          <li><a href="https://www.pajeroforum.com.au/forum/general-information/mechanical/64891-inlet-intercooler-removal-ns-diesel" target="_blank" rel="noopener">Intercooler removal — Pajero NS diesel (written)</a></li>
           <li>Bull bar fitting — ARB on Pajero NT (video): <a href="https://www.youtube.com/watch?v=P7k1V2pBYOc" target="_blank" rel="noopener">part 1</a>, <a href="https://www.youtube.com/watch?v=sWVyes5-A44" target="_blank" rel="noopener">part 2</a></li>
           <li>A/C condenser: <a href="https://arctick.org/refrigerant-handling-licence/refrigerant-recovery/" target="_blank" rel="noopener">why recover, not vent — ARC (AU)</a>, <a href="https://www.yourmechanic.com/article/how-to-replace-an-ac-condenser-by-spencer-clayton" target="_blank" rel="noopener">disconnect &amp; replace (written)</a>, <a href="https://www.youtube.com/watch?v=Oii4eKizdb8" target="_blank" rel="noopener">disconnecting lines (video)</a></li>
           <li><a href="https://www.youtube.com/watch?v=4LqgailuiKE" target="_blank" rel="noopener">Treating metal against rust — converter &amp; primer (video)</a> — self-etch primer on clean bare metal; rust converter on existing rust.</li>
