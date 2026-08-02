@@ -338,11 +338,8 @@
         <button class="navitem" role="tab" data-doc="parts">
           <span class="num">03</span><span class="label">Parts</span><span class="dot doing" title="in progress"></span>
         </button>
-        <button class="navitem is-pending" role="tab" data-doc="equipment">
-          <span class="num">04</span><span class="label">Equipment</span><span class="dot pending" title="not started"></span>
-        </button>
         <button class="navitem" role="tab" data-doc="links">
-          <span class="num">05</span><span class="label">Links</span><span class="dot doing" title="in progress"></span>
+          <span class="num">04</span><span class="label">Links</span><span class="dot doing" title="in progress"></span>
         </button>
       </div>
     </nav>
@@ -609,6 +606,29 @@
 
         <div class="totalcard"><div class="k">Rough running total (known parts)</div><div class="v">~A$1,000–1,300 <span style="font-weight:500;font-size:.9rem;color:var(--ink-soft);">· well under the A$4,000 budget</span></div></div>
         <p style="font-size:.82rem;color:var(--ink-faint);margin:14px 2px 0;">Linked part numbers open a source page showing the number for this model (Pajero IV V8_W/V9_W 3.2 DI-D). They are strong leads, not gospel — confirm against the VIN in a genuine catalogue (see the <strong>Links</strong> tab) before buying.</p>
+
+        <h3 style="margin-top:34px;">Equipment — tools &amp; gear</h3>
+        <p style="font-size:.92rem;color:var(--ink-soft);margin:2px 2px 10px;">The tools and safety gear the job needs. Borrow where you can.</p>
+        <div class="tablewrap"><table class="parts">
+          <thead><tr><th>Item</th><th>Get it</th><th>Notes</th></tr></thead>
+          <tbody>
+            <tr><td>Wheel chocks</td><td>Have / buy</td><td>Chock before working</td></tr>
+            <tr><td>Gloves &amp; safety glasses</td><td>Buy</td><td>Coolant is toxic; metal is sharp</td></tr>
+            <tr><td>Coolant drain pan</td><td>Buy / borrow</td><td>Catch the old coolant (Stage 3)</td></tr>
+            <tr><td>Metric socket set &amp; spanners</td><td>Have / borrow</td><td>Main tool kit</td></tr>
+            <tr><td>Screwdrivers, pliers, side cutters</td><td>Have</td><td></td></tr>
+            <tr><td>Trolley jack &amp; axle stands</td><td>Borrow</td><td>If working under the front</td></tr>
+            <tr><td>Torque wrench</td><td>Borrow</td><td>Bull bar &amp; chassis bolts (Stage 8)</td></tr>
+            <tr><td>Pry bar</td><td>Have / borrow</td><td></td></tr>
+            <tr><td>Tape measure &amp; string line</td><td>Have</td><td>Gap and square checks (Stage 4)</td></tr>
+            <tr><td>Wire brush / angle grinder</td><td>Borrow</td><td>Rust removal (Stage 6)</td></tr>
+            <tr><td>Cooling system pressure tester</td><td>Borrow / hire</td><td>Test after refit (Stage 10)</td></tr>
+            <tr><td>Multimeter</td><td>Have / borrow</td><td>Fan wiring checks</td></tr>
+            <tr><td>Zip-lock bags &amp; marker</td><td>Buy</td><td>Label &amp; number bolts</td></tr>
+            <tr><td>Self-etch primer / rust converter</td><td>Buy</td><td>Bare metal (Stage 6)</td></tr>
+            <tr><td>Cable ties &amp; rags</td><td>Buy / have</td><td></td></tr>
+          </tbody>
+        </table></div>
       </section>
 
       <section class="doc" id="doc-towing">
@@ -635,13 +655,6 @@
         </table></div>
         <p style="font-size:.86rem;color:var(--ink-soft);margin:10px 2px 0;">Roseville Tilt Tray and Combined Towing are the most local — start there. Sydney City Towing's St Ives address is shared by several trading names, so confirm it when you call. STTG is Kirrawee-based but covers the North Shore.</p>
         <p style="font-size:.82rem;color:var(--ink-faint);margin:12px 2px 0;">No operator publishes a fixed price — all quote per job. Numbers come from online listings and may change; confirm when you call. More quotes: <a href="https://www.oneflare.com.au/towing/nsw/mount-kuring-gai" target="_blank" rel="noopener">Oneflare</a>.</p>
-      </section>
-
-      <section class="doc" id="doc-equipment">
-        <h2>Equipment</h2>
-        <p class="subtitle">Tools and gear needed for the job.</p>
-        <div class="placeholder"><div class="big">Not started yet</div>
-          <p>The tools and safety gear each stage needs — from wheel chocks and a drain pan to spanners, a coolant tester, gloves, and eye protection. Flags what Ben has and what he must borrow or buy.</p></div>
       </section>
 
       <section class="doc" id="doc-links">
@@ -697,7 +710,7 @@
   </div>
 
   <footer class="foot">
-    Pajero Repair Hub · one page, all documents · use <span class="kbd">←</span> <span class="kbd">→</span> or <span class="kbd">1</span>–<span class="kbd">5</span> to switch
+    Pajero Repair Hub · one page, all documents · use <span class="kbd">←</span> <span class="kbd">→</span> or <span class="kbd">1</span>–<span class="kbd">4</span> to switch
   </footer>
 </div>
 
@@ -731,7 +744,7 @@
       var cur = items.findIndex(function (b) { return b.getAttribute('aria-current') === 'true'; });
       if (e.key === 'ArrowRight') { show(order[Math.min(order.length - 1, cur + 1)]); e.preventDefault(); }
       else if (e.key === 'ArrowLeft') { show(order[Math.max(0, cur - 1)]); e.preventDefault(); }
-      else if (/^[1-5]$/.test(e.key)) {
+      else if (/^[1-4]$/.test(e.key)) {
         var top = items.filter(function (b) { return !b.classList.contains('subitem'); });
         var t = top[parseInt(e.key, 10) - 1];
         if (t) { show(t.dataset.doc); e.preventDefault(); }

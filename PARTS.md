@@ -74,3 +74,25 @@ About **A$1,000 to A$1,300** for the known parts. Well under the A$4,000 budget.
 ## Sources and verification
 
 Part numbers here come from OEM cross-references on parts retailers (AutoDoc, B-Parts, DENSO listings). Treat them as a strong lead, not gospel. Before you buy, confirm each number against the car's VIN in a genuine catalogue — Amayama, epc-data, or a Mitsubishi dealer. Grade and facelift changes mean one series can carry several numbers.
+
+## Equipment — tools and gear
+
+The tools and safety gear the job needs. Borrow where you can.
+
+| Item | Get it | Notes |
+| --- | --- | --- |
+| Wheel chocks | Have / buy | Chock before working |
+| Gloves and safety glasses | Buy | Coolant is toxic; metal is sharp |
+| Coolant drain pan | Buy / borrow | Catch the old coolant (Stage 3) |
+| Metric socket set and spanners | Have / borrow | Main tool kit |
+| Screwdrivers, pliers, side cutters | Have | |
+| Trolley jack and axle stands | Borrow | If working under the front |
+| Torque wrench | Borrow | Bull bar and chassis bolts (Stage 8) |
+| Pry bar | Have / borrow | |
+| Tape measure and string line | Have | Gap and square checks (Stage 4) |
+| Wire brush / angle grinder | Borrow | Rust removal (Stage 6) |
+| Cooling system pressure tester | Borrow / hire | Test after refit (Stage 10) |
+| Multimeter | Have / borrow | Fan wiring checks |
+| Zip-lock bags and marker | Buy | Label and number bolts |
+| Self-etch primer / rust converter | Buy | Bare metal (Stage 6) |
+| Cable ties and rags | Buy / have | |
