@@ -21,12 +21,13 @@ Keep these new or known-good. They keep the engine alive.
 
 | Part | Part number | Source | Est. (A$) | Status |
 | --- | --- | --- | --- | --- |
-| Radiator (engine cooling) | [1350A155](https://www.autoparts-24.com/item/D_0155_405218/) (alt 1350A154) | Online / parts store | 200 | Needed |
-| Radiator fan, electric, and shroud | [1320A033](https://www.b-parts.com/en/store/products/3148231/radiator-fan-mitsubishi-pajero-iv-v8_w-v9_w-32-di-d-v88w-v98w-1320a033-2006/) | Wrecker / online | 60 | Needed |
+| Radiator (engine cooling) | [1350A155](https://hollanderparts.com.au/MITSUBISHI-PAJERO-Radiator-2012/ns92200875/) (alt 1350A154) | Wrecker / parts store | 200 | Needed |
+| Radiator/condenser fan (electric, front) | TBC | Wrecker | 60 | Needed |
+| Fan clutch, viscous coupling (4M41) | [1320A033](https://www.ebay.com.au/itm/363264345067) | Wrecker / online | TBC | Check |
 | Radiator hoses and clamps | TBC | Parts store | 40 | Needed |
 
 Notes:
-* The 3.2 diesel also has an engine-driven viscous fan behind the radiator. If that fan or its clutch is the damaged one, it is a separate part — confirm which fan broke.
+* The front electric fan is the one most likely hit through the grille. 1320A033 is the engine-driven viscous fan clutch, which sits behind the radiator — check whether it was damaged too. Confirm which fan the crash broke.
 * Radiator cross-reference numbers seen: MR968055, MR529225, and others. 1350A154 is the alternate — confirm auto vs manual before buying.
 
 ## Front structure and body
@@ -63,8 +64,8 @@ These sit in the crash zone. Check them once the front is stripped.
 
 | Part | Part number | Source | Est. (A$) | Status |
 | --- | --- | --- | --- | --- |
-| A/C condenser | [7812A156](https://www.ebay.com/itm/157247727925) (x-ref MR513110 / MN123332) | Wrecker | TBC | Check |
-| Intercooler (charge-air cooler) | [1530A052](https://b-parts.com/en/store/products/124143/intercooler-mitsubishi-pajero-iv-v8_w-v9_w-32-di-d-4wd-1530a052-2006) (verify) | Wrecker | TBC | Check |
+| A/C condenser | [7812A156](https://www.myautoparts.com.au/products/a-c-condenser-aftermarket-suits-mitsubishi-pajero-1) (x-ref MR513110 / MN123332) | Wrecker | TBC | Check |
+| Intercooler (charge-air cooler) | [1530A052](https://www.ebay.com.au/itm/192975862962) (verify) | Wrecker | TBC | Check |
 | Fan shroud | TBC | Wrecker | TBC | Check |
 
 ## Rough running total
@@ -73,7 +74,7 @@ About **A$1,000 to A$1,300** for the known parts. Well under the A$4,000 budget.
 
 ## Sources and verification
 
-Part numbers here come from OEM cross-references on parts retailers (AutoDoc, B-Parts, DENSO listings). Treat them as a strong lead, not gospel. Before you buy, confirm each number against the car's VIN in a genuine catalogue — Amayama, epc-data, or a Mitsubishi dealer. Grade and facelift changes mean one series can carry several numbers.
+The linked source pages are Australian where we could find one that lists the part for this model (Hollander, MyAutoParts, eBay Australia). A couple still point overseas where the exact number was clearer. Treat them as strong leads, not gospel. Before you buy, confirm each number against the car's VIN in a genuine catalogue — Amayama, epc-data, or a Mitsubishi dealer. Grade and facelift changes mean one series can carry several numbers.
 
 ## Equipment — tools and gear
 
