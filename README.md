@@ -79,6 +79,7 @@ We build and maintain these documents as the project runs.
 | --- | --- |
 | [Plan](PLAN.md) | The repair, step by step, in order. |
 | [Replacement parts](PARTS.md) | Parts to find, buy, and fit. Cost and source. |
+| [Towing](TOWING.md) | Tow companies for moving the car home. |
 | [Risk assessment](RISKS.md) | What can go wrong. How we stop it. |
 | [Equipment](EQUIPMENT.md) | Tools and gear needed for the job. |
 | [Links](LINKS.md) | Helpful resources — catalogues, parts sources, forums. |

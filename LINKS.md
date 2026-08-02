@@ -2,6 +2,10 @@
 
 Helpful resources for the repair. We add to this as we find and use them.
 
+## Towing
+
+* [Towing — local tow companies and quotes](TOWING.md)
+
 ## Genuine parts catalogues (OEM part numbers)
 
 Use these to confirm a Mitsubishi part number against the car's VIN or chassis code (V98W).

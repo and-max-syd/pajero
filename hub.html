@@ -332,14 +332,17 @@
         <button class="navitem" role="tab" data-doc="parts">
           <span class="num">03</span><span class="label">Parts</span><span class="dot doing" title="in progress"></span>
         </button>
+        <button class="navitem" role="tab" data-doc="towing">
+          <span class="num">04</span><span class="label">Towing</span><span class="dot doing" title="in progress"></span>
+        </button>
         <button class="navitem is-pending" role="tab" data-doc="risks">
-          <span class="num">04</span><span class="label">Risks</span><span class="dot pending" title="not started"></span>
+          <span class="num">05</span><span class="label">Risks</span><span class="dot pending" title="not started"></span>
         </button>
         <button class="navitem is-pending" role="tab" data-doc="equipment">
-          <span class="num">05</span><span class="label">Equipment</span><span class="dot pending" title="not started"></span>
+          <span class="num">06</span><span class="label">Equipment</span><span class="dot pending" title="not started"></span>
         </button>
         <button class="navitem" role="tab" data-doc="links">
-          <span class="num">06</span><span class="label">Links</span><span class="dot doing" title="in progress"></span>
+          <span class="num">07</span><span class="label">Links</span><span class="dot doing" title="in progress"></span>
         </button>
       </div>
     </nav>
@@ -599,6 +602,32 @@
         <p style="font-size:.82rem;color:var(--ink-faint);margin:14px 2px 0;">Part numbers are cross-referenced leads from parts retailers — confirm against the VIN in a genuine catalogue (see the <strong>Links</strong> tab) before buying.</p>
       </section>
 
+      <section class="doc" id="doc-towing">
+        <h2>Towing</h2>
+        <p class="subtitle">Move the car from where it sits to Ben's driveway — a short local job in the St Ives / Roseville area. Do not drive it; the radiator is holed and the engine has no cooling.</p>
+
+        <div class="grouplabel">What to ask for</div>
+        <ul>
+          <li>A flatbed (tilt-tray) tow for a short local move.</li>
+          <li>Ask for a flat rate, not a per-kilometre rate.</li>
+          <li>Say it rolls, steers, and brakes — that makes loading easy and can lower the price.</li>
+          <li>Rough expectation: A$100–A$180. Ring 2–3 for quotes.</li>
+        </ul>
+
+        <div class="grouplabel">Companies that service St Ives / Roseville</div>
+        <div class="tablewrap"><table class="parts">
+          <thead><tr><th>No.</th><th>Company</th><th>Phone</th><th>Website</th><th>Price</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td>Roseville Tilt Tray Service</td><td><a href="tel:+61284158610">(02) 8415 8610</a></td><td><a href="https://rosevilletilttrayservice.com.au/" target="_blank" rel="noopener">website</a></td><td>Call for quote</td></tr>
+            <tr><td>2</td><td>Combined Towing (North Shore)</td><td><a href="tel:+61293193434">(02) 9319 3434</a></td><td><a href="https://combinedtowing.com.au/north-shore-towing/" target="_blank" rel="noopener">website</a></td><td>Call for quote</td></tr>
+            <tr><td>3</td><td>Sydney City Towing &amp; Tilt Tray (St Ives)</td><td><a href="tel:+61294404488">(02) 9440 4488</a></td><td><a href="https://www.yelp.com/biz/sydney-city-towing-and-tilt-tray-st-ives" target="_blank" rel="noopener">Yelp</a></td><td>Call for quote</td></tr>
+            <tr><td>4</td><td>Select Tilt Tray Group (STTG)</td><td><a href="tel:+61295453464">(02) 9545 3464</a></td><td><a href="https://www.sttg.com.au/" target="_blank" rel="noopener">website</a></td><td>Call for quote</td></tr>
+          </tbody>
+        </table></div>
+        <p style="font-size:.86rem;color:var(--ink-soft);margin:10px 2px 0;">Roseville Tilt Tray and Combined Towing are the most local — start there. Sydney City Towing's St Ives address is shared by several trading names, so confirm it when you call. STTG is Kirrawee-based but covers the North Shore.</p>
+        <p style="font-size:.82rem;color:var(--ink-faint);margin:12px 2px 0;">No operator publishes a fixed price — all quote per job. Numbers come from online listings and may change; confirm when you call. More quotes: <a href="https://www.oneflare.com.au/towing/nsw/mount-kuring-gai" target="_blank" rel="noopener">Oneflare</a>.</p>
+      </section>
+
       <section class="doc" id="doc-risks">
         <h2>Risk assessment</h2>
         <p class="subtitle">What can go wrong. How we stop it.</p>
@@ -616,6 +645,11 @@
       <section class="doc" id="doc-links">
         <h2>Links</h2>
         <p class="subtitle">Helpful resources for the repair. We add to this as we find and use them.</p>
+
+        <div class="grouplabel">Towing</div>
+        <ul>
+          <li>Local tow companies and quotes — see the <strong>Towing</strong> tab (item 04).</li>
+        </ul>
 
         <div class="grouplabel">Genuine parts catalogues (OEM part numbers)</div>
         <ul>
@@ -656,7 +690,7 @@
   </div>
 
   <footer class="foot">
-    Pajero Repair Hub · one page, all documents · use <span class="kbd">←</span> <span class="kbd">→</span> or <span class="kbd">1</span>–<span class="kbd">6</span> to switch
+    Pajero Repair Hub · one page, all documents · use <span class="kbd">←</span> <span class="kbd">→</span> or <span class="kbd">1</span>–<span class="kbd">7</span> to switch
   </footer>
 </div>
 
@@ -686,7 +720,7 @@
       var cur = items.findIndex(function (b) { return b.getAttribute('aria-current') === 'true'; });
       if (e.key === 'ArrowRight') { show(order[Math.min(order.length - 1, cur + 1)]); e.preventDefault(); }
       else if (e.key === 'ArrowLeft') { show(order[Math.max(0, cur - 1)]); e.preventDefault(); }
-      else if (/^[1-6]$/.test(e.key)) { var i = parseInt(e.key, 10) - 1; if (order[i]) { show(order[i]); e.preventDefault(); } }
+      else if (/^[1-7]$/.test(e.key)) { var i = parseInt(e.key, 10) - 1; if (order[i]) { show(order[i]); e.preventDefault(); } }
     });
   })();
 </script>
