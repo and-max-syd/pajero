@@ -34,6 +34,10 @@ Good for OEM cross-reference numbers and aftermarket equivalents.
 
 * [Pajero 4WD Club of Victoria — public forum](https://www.pajeroforum.com.au) — model-specific advice and fitment tips.
 
+## How-to guides
+
+* [Treating bare metal against rust (primer guide)](https://mechanicinsider.com/best-automotive-primer-for-bare-metal/) — self-etch primer and rust converter basics.
+
 ## Cooling and aftermarket
 
 * [Fenix — OEM replacement radiator (NS/NT diesel)](https://www.fenixcooling.co.nz/products/mit5679-pa22a) — quality aftermarket radiator.

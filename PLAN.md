@@ -75,17 +75,36 @@ Done when: the front is stripped back to the support panel and the crash zone is
 
 ## Stage 4 — Assess hidden damage
 
-Goal: know the full picture before we spend money.
+Goal: know the full picture before we spend money. Find what the crash hid.
 
-With the front open, look past the obvious damage.
+Work slowly. Compare the hit side (left) with the untouched right side. The right side is your reference for how the left should look and sit.
+
+**Structure and panels**
 
 * The radiator support bracket is badly bent and needs replacing. Check how far the damage spreads around it.
-* Check the air-conditioning condenser. It sits in front of the radiator. It may be crushed too.
-* Check the intercooler and its pipes. This is a diesel. Look for dents and splits.
-* Check the fan shroud and wiring.
-* Look for oil in the coolant, or coolant in the oil. This tells us the engine is sound.
-* Check the front side panels for bends. Check the bonnet fit.
-* Write down every damaged part. This feeds the parts list.
+* Look for shiny bare metal, cracked or flaked paint, ripples, and folds. These mark bent metal.
+* Run a tape measure. Compare the same gap left and right — grille to headlight, headlight to guard, bonnet to guard. Uneven gaps mean bent metal.
+* Check the chassis rail tips behind the bumper mounts. Look for kinks or folds. Lay a straight edge or a string line across the front to see if it is square.
+* Open and close the bonnet. Check it sits even and latches clean.
+
+**Cooling and engine bay**
+
+* Check the A/C condenser in front of the radiator. Look for bent fins, dents, and oily residue. Oily residue is leaking refrigerant oil.
+* Check the intercooler and its pipes. Look for dents, splits, and loose clamps. Rubber hoses crack at the bends.
+* Spin each fan by hand. Feel and listen for rubbing, cracks, or a loose viscous coupling.
+* Check the A/C compressor and the belts at the front of the engine. The crash pushed inward — look for anything shifted or touching.
+* Trace the wiring and connectors. Look for pulled, torn, or unplugged plugs. Reconnect the bonnet latch sensor wires we detached.
+
+**Is the engine sound?**
+
+* Pull the oil dipstick. Milky or cream-coloured oil means water in the oil. That is bad.
+* Look in the coolant header tank for an oily sheen. That is bad too.
+* Later, once the new radiator is in, fill and pressure-test the cooling system. Run it to temperature. Watch the gauge, watch for white smoke, and watch for the level dropping. These point to a head gasket.
+* On the first drive, feel for the car pulling to one side. That can mean a bent chassis or knocked-out alignment.
+
+**Write it down**
+
+* Write down and photograph every damaged part. This feeds the parts list.
 
 Done when: we have a full damage list and know the engine is sound.
 
@@ -110,7 +129,7 @@ Goal: a straight, solid frame for the radiator to hang on.
 
 * Replace the bent radiator support bracket with a good second-hand one.
 * Check it is square and true.
-* Treat any bare metal against rust.
+* Treat any bare metal against rust. See [how to treat bare metal against rust](https://mechanicinsider.com/best-automotive-primer-for-bare-metal/).
 
 Done when: the new support structure is straight and the radiator will sit true.
 
