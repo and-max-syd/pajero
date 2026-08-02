@@ -99,8 +99,8 @@ We build and maintain these documents as the project runs.
 
 | Document | Purpose |
 | --- | --- |
+| [Open questions](QUESTIONS.md) | Running list of things to confirm. |
 | [Plan](PLAN.md) | The repair, step by step, in order. |
 | [Replacement parts](PARTS.md) | Parts to find, buy, and fit — plus tools and equipment. |
 | [Towing](TOWING.md) | Tow companies for moving the car home. |
-| [Open questions](QUESTIONS.md) | Running list of things to confirm. |
 | [Links](LINKS.md) | Helpful resources — catalogues, parts sources, forums. |
