@@ -81,3 +81,4 @@ We build and maintain these documents as the project runs.
 | [Replacement parts](PARTS.md) | Parts to find, buy, and fit. Cost and source. |
 | [Risk assessment](RISKS.md) | What can go wrong. How we stop it. |
 | [Equipment](EQUIPMENT.md) | Tools and gear needed for the job. |
+| [Links](LINKS.md) | Helpful resources — catalogues, parts sources, forums. |

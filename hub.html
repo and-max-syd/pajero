@@ -338,6 +338,9 @@
         <button class="navitem is-pending" role="tab" data-doc="equipment">
           <span class="num">05</span><span class="label">Equipment</span><span class="dot pending" title="not started"></span>
         </button>
+        <button class="navitem" role="tab" data-doc="links">
+          <span class="num">06</span><span class="label">Links</span><span class="dot doing" title="in progress"></span>
+        </button>
       </div>
     </nav>
 
@@ -541,13 +544,14 @@
       <section class="doc" id="doc-parts">
         <h2>Replacement parts</h2>
         <p class="subtitle">Buy second-hand where safe. Buy new for anything that keeps the engine cool or the car safe. Prices are rough estimates in A$ — a guide, not a quote.</p>
+        <p style="font-size:.86rem;color:var(--ink-soft);margin:-14px 2px 18px;">Vehicle: NT VR-X 3.2 DI-D, engine <strong>4M41</strong>, chassis <strong>V98W</strong> (LWB) — quote the VIN when ordering. Part numbers below are cross-referenced leads; confirm by VIN before buying.</p>
 
         <div class="grouplabel">Cooling — keep these new or known-good</div>
         <div class="tablewrap"><table class="parts">
           <thead><tr><th>Part</th><th>Part no.</th><th>Source</th><th class="num">Est. A$</th><th>Status</th></tr></thead>
           <tbody>
-            <tr><td>Radiator</td><td>TBC</td><td>Online / parts store</td><td class="num">200</td><td><span class="pill">Needed</span></td></tr>
-            <tr><td>Cooling fan(s)</td><td>TBC</td><td>Wrecker</td><td class="num">60</td><td><span class="pill">Needed</span></td></tr>
+            <tr><td>Radiator (engine cooling)</td><td>1350A155</td><td>Online / parts store</td><td class="num">200</td><td><span class="pill">Needed</span></td></tr>
+            <tr><td>Radiator fan (electric) &amp; shroud</td><td>1320A033</td><td>Wrecker / online</td><td class="num">60</td><td><span class="pill">Needed</span></td></tr>
             <tr><td>Radiator hoses and clamps</td><td>TBC</td><td>Parts store</td><td class="num">40</td><td><span class="pill">Needed</span></td></tr>
           </tbody>
         </table></div>
@@ -557,9 +561,9 @@
           <thead><tr><th>Part</th><th>Part no.</th><th>Source</th><th class="num">Est. A$</th><th>Status</th></tr></thead>
           <tbody>
             <tr><td>Radiator support bracket / panel</td><td>TBC</td><td>Wrecker</td><td class="num">100</td><td><span class="pill">Needed</span></td></tr>
-            <tr><td>Alloy bull bar (replaces bumper)</td><td>TBC</td><td>Marketplace / wrecker</td><td class="num">400</td><td><span class="pill">Needed</span></td></tr>
-            <tr><td>Front grille</td><td>TBC</td><td>Wrecker / Marketplace</td><td class="num">80</td><td><span class="pill">Needed</span></td></tr>
-            <tr><td>Bonnet latch mechanism</td><td>TBC</td><td>Wrecker</td><td class="num">40</td><td><span class="pill">Needed</span></td></tr>
+            <tr><td>Alloy bull bar (replaces bumper)</td><td>Aftermarket</td><td>Marketplace / wrecker</td><td class="num">400</td><td><span class="pill">Needed</span></td></tr>
+            <tr><td>Radiator grille</td><td>TBC</td><td>Wrecker / Marketplace</td><td class="num">80</td><td><span class="pill">Needed</span></td></tr>
+            <tr><td>Hood lock (bonnet latch)</td><td>TBC</td><td>Wrecker</td><td class="num">40</td><td><span class="pill">Needed</span></td></tr>
           </tbody>
         </table></div>
 
@@ -576,7 +580,7 @@
         <div class="tablewrap"><table class="parts">
           <thead><tr><th>Part</th><th>Part no.</th><th>Source</th><th class="num">Est. A$</th><th>Status</th></tr></thead>
           <tbody>
-            <tr><td>Coolant (correct spec)</td><td>TBC</td><td>Parts store</td><td class="num">35</td><td><span class="pill">Needed</span></td></tr>
+            <tr><td>Coolant (Mitsubishi SLLC)</td><td>TBC</td><td>Parts store</td><td class="num">35</td><td><span class="pill">Needed</span></td></tr>
             <tr><td>Misc fasteners and clips</td><td>—</td><td>Parts store</td><td class="num">20</td><td><span class="pill">Needed</span></td></tr>
           </tbody>
         </table></div>
@@ -585,13 +589,14 @@
         <div class="tablewrap"><table class="parts">
           <thead><tr><th>Part</th><th>Part no.</th><th>Source</th><th class="num">Est. A$</th><th>Status</th></tr></thead>
           <tbody>
-            <tr><td>A/C condenser</td><td>TBC</td><td>Wrecker</td><td class="num">TBC</td><td><span class="pill check">Check</span></td></tr>
-            <tr><td>Intercooler and pipes</td><td>TBC</td><td>Wrecker</td><td class="num">TBC</td><td><span class="pill check">Check</span></td></tr>
+            <tr><td>A/C condenser</td><td>7812A156</td><td>Wrecker</td><td class="num">TBC</td><td><span class="pill check">Check</span></td></tr>
+            <tr><td>Intercooler (charge-air)</td><td>1530A052 (verify)</td><td>Wrecker</td><td class="num">TBC</td><td><span class="pill check">Check</span></td></tr>
             <tr><td>Fan shroud</td><td>TBC</td><td>Wrecker</td><td class="num">TBC</td><td><span class="pill check">Check</span></td></tr>
           </tbody>
         </table></div>
 
         <div class="totalcard"><div class="k">Rough running total (known parts)</div><div class="v">~A$1,000–1,300 <span style="font-weight:500;font-size:.9rem;color:var(--ink-soft);">· well under the A$4,000 budget</span></div></div>
+        <p style="font-size:.82rem;color:var(--ink-faint);margin:14px 2px 0;">Part numbers are cross-referenced leads from parts retailers — confirm against the VIN in a genuine catalogue (see the <strong>Links</strong> tab) before buying.</p>
       </section>
 
       <section class="doc" id="doc-risks">
@@ -607,11 +612,51 @@
         <div class="placeholder"><div class="big">Not started yet</div>
           <p>The tools and safety gear each stage needs — from wheel chocks and a drain pan to spanners, a coolant tester, gloves, and eye protection. Flags what Ben has and what he must borrow or buy.</p></div>
       </section>
+
+      <section class="doc" id="doc-links">
+        <h2>Links</h2>
+        <p class="subtitle">Helpful resources for the repair. We add to this as we find and use them.</p>
+
+        <div class="grouplabel">Genuine parts catalogues (OEM part numbers)</div>
+        <ul>
+          <li><a href="https://www.amayama.com/en/catalogs/mitsubishi/pajero" target="_blank" rel="noopener">Amayama — Pajero catalogue</a> — genuine EPC, ships from Japan.</li>
+          <li><a href="https://mitsubishi.epc-data.com/pajero/" target="_blank" rel="noopener">epc-data — Pajero</a> — free diagrams and part numbers.</li>
+          <li><a href="https://www.megazip.net/zapchasti-dlya-avtomobilej/mitsubishi/pajero-montero-4375/v98w-10699/lyuj1-625273" target="_blank" rel="noopener">Megazip — Pajero V98W (2008–2009)</a> — diagrams and ordering.</li>
+          <li><a href="https://partsouq.com/en/catalog/genuine/vehicle?c=Mitsubishi" target="_blank" rel="noopener">PartSouq — Mitsubishi</a> — genuine catalogue and prices.</li>
+          <li><a href="https://www.nengun.com/oem/mitsubishi/pajero-v98w" target="_blank" rel="noopener">Nengun — Pajero V98W genuine parts</a></li>
+        </ul>
+
+        <div class="grouplabel">Parts retailers and cross-references</div>
+        <ul>
+          <li><a href="https://www.autodoc.parts/spares/mitsubishi/pajero-shogun/pajero-iv-v8-w-v9-w/33209-3-2-di-d-4wd-v98w-v88w" target="_blank" rel="noopener">AutoDoc — Pajero IV 3.2 DI-D</a></li>
+          <li><a href="https://www.b-parts.com" target="_blank" rel="noopener">B-Parts</a> — used parts with OEM numbers.</li>
+          <li><a href="https://www.myautoparts.com.au/collections/mitsubishi-pajero" target="_blank" rel="noopener">MyAutoParts (AU) — Pajero</a></li>
+        </ul>
+
+        <div class="grouplabel">Second-hand parts (Australia)</div>
+        <ul>
+          <li><a href="https://www.facebook.com/marketplace" target="_blank" rel="noopener">Facebook Marketplace</a> — used parts and bull bars, local pickup.</li>
+          <li><a href="https://www.gumtree.com.au/s-parts-accessories/mitsubishi+pajero/k0c18323" target="_blank" rel="noopener">Gumtree — Pajero parts</a></li>
+          <li>Car-Part.com / local wreckers — ring around for front-end panels and brackets.</li>
+        </ul>
+
+        <div class="grouplabel">Community and know-how</div>
+        <ul>
+          <li><a href="https://www.pajeroforum.com.au" target="_blank" rel="noopener">Pajero 4WD Club of Victoria — forum</a> — model-specific advice and fitment tips.</li>
+        </ul>
+
+        <div class="grouplabel">Cooling and aftermarket</div>
+        <ul>
+          <li><a href="https://www.fenixcooling.co.nz/products/mit5679-pa22a" target="_blank" rel="noopener">Fenix — OEM replacement radiator (NS/NT diesel)</a></li>
+        </ul>
+
+        <p style="font-size:.82rem;color:var(--ink-faint);margin:16px 2px 0;">Verify any part number against the VIN before buying. Prices and stock change.</p>
+      </section>
     </main>
   </div>
 
   <footer class="foot">
-    Pajero Repair Hub · one page, all documents · use <span class="kbd">←</span> <span class="kbd">→</span> or <span class="kbd">1</span>–<span class="kbd">5</span> to switch
+    Pajero Repair Hub · one page, all documents · use <span class="kbd">←</span> <span class="kbd">→</span> or <span class="kbd">1</span>–<span class="kbd">6</span> to switch
   </footer>
 </div>
 
@@ -641,7 +686,7 @@
       var cur = items.findIndex(function (b) { return b.getAttribute('aria-current') === 'true'; });
       if (e.key === 'ArrowRight') { show(order[Math.min(order.length - 1, cur + 1)]); e.preventDefault(); }
       else if (e.key === 'ArrowLeft') { show(order[Math.max(0, cur - 1)]); e.preventDefault(); }
-      else if (/^[1-5]$/.test(e.key)) { var i = parseInt(e.key, 10) - 1; if (order[i]) { show(order[i]); e.preventDefault(); } }
+      else if (/^[1-6]$/.test(e.key)) { var i = parseInt(e.key, 10) - 1; if (order[i]) { show(order[i]); e.preventDefault(); } }
     });
   })();
 </script>
