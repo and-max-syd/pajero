@@ -21,8 +21,8 @@ Keep these new or known-good. They keep the engine alive.
 
 | Part | Part number | Source | Est. (A$) | Status |
 | --- | --- | --- | --- | --- |
-| Radiator (engine cooling) | 1350A155 (alt 1350A154) | Online / parts store | 200 | Needed |
-| Radiator fan, electric, and shroud | 1320A033 | Wrecker / online | 60 | Needed |
+| Radiator (engine cooling) | [1350A155](https://www.autoparts-24.com/item/D_0155_405218/) (alt 1350A154) | Online / parts store | 200 | Needed |
+| Radiator fan, electric, and shroud | [1320A033](https://www.b-parts.com/en/store/products/3148231/radiator-fan-mitsubishi-pajero-iv-v8_w-v9_w-32-di-d-v88w-v98w-1320a033-2006/) | Wrecker / online | 60 | Needed |
 | Radiator hoses and clamps | TBC | Parts store | 40 | Needed |
 
 Notes:
@@ -63,8 +63,8 @@ These sit in the crash zone. Check them once the front is stripped.
 
 | Part | Part number | Source | Est. (A$) | Status |
 | --- | --- | --- | --- | --- |
-| A/C condenser | 7812A156 (x-ref MR513110 / MN123332) | Wrecker | TBC | Check |
-| Intercooler (charge-air cooler) | 1530A052 (verify) | Wrecker | TBC | Check |
+| A/C condenser | [7812A156](https://www.ebay.com/itm/157247727925) (x-ref MR513110 / MN123332) | Wrecker | TBC | Check |
+| Intercooler (charge-air cooler) | [1530A052](https://b-parts.com/en/store/products/124143/intercooler-mitsubishi-pajero-iv-v8_w-v9_w-32-di-d-4wd-1530a052-2006) (verify) | Wrecker | TBC | Check |
 | Fan shroud | TBC | Wrecker | TBC | Check |
 
 ## Rough running total
