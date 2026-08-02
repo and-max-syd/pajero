@@ -63,6 +63,15 @@ Because it started and drove without other trouble, we suspect the main mechanic
 * Ben buys a second-hand alloy bull bar to replace the front bumper bar.
 * Buy replacement parts second-hand from wreckers or Facebook Marketplace.
 
+## Sourcing parts
+
+Follow this order for every part:
+
+1. **Australia only.** Buy from Australian sources.
+2. **Second-hand first.** Wreckers, Facebook Marketplace, Gumtree. Cheapest and preferred.
+3. **New if needed.** If no good used part turns up, buy new — still in Australia.
+4. **Foreign sources are for reference only.** If a part cannot be found in Australia, link a foreign listing to help confirm the part is right. Do not buy from it.
+
 ## Success looks like
 
 * The Pajero starts, runs, and drives.
